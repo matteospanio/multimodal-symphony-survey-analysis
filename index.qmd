@@ -135,7 +135,7 @@ ggplot(eating_experience_distribution, aes(x = "", y = percentage, fill = eating
 Distribution of participants’ eating experiences.
 :::
 Demographic characteristics of the study’s participants.
-:::
+::::
 
 Overall the reached population has a mean age of `{r} round(mean(data_pinfo$age, na.rm = TRUE))` years, whit a maximum of `{r} max(data_pinfo$age, na.rm = TRUE)` and a minimum of `{r} min(data_pinfo$age, na.rm = TRUE)`. The mean time spent on the survey was `{r} round(mean(data_pinfo$time, na.rm = TRUE))` minutes, with a standard deviation of `{r} round(sd(data_pinfo$time, na.rm = TRUE), 1)`. Along with age, gender and execution time also data about musical and eating experience have been collected: @fig-demographic-info-2 displays the ethnicity distribution of the population, the majority of participants recognize themself as *White/European American*, participants have an almost equally distributed experience in listening to music (see @fig-demographic-info-3), while just one participant recognized himself as an experienced eater and the major part of the sample population declared to be not-experienced in tasting food (@fig-demographic-info-4).
 
@@ -481,7 +481,7 @@ print(heatmap_plot)
 Heatmap of perceived emotional response in correspondence of the suggested taste.
 :::
 Heatmaps
-:::
+::::
 
 ### Factorial analysis
 
@@ -537,6 +537,7 @@ print(factor_analysis$loadings)
 To visualize the relationships among the factors, we generated biplots for various factor combinations. The biplots, shown in the subsequent figures, illustrate the distribution of variables across the identified factors, highlighting the clustering of adjectives associated with similar emotional states.
 
 :::: {#fig-fa-biplot layout="[[1, 1], [1, 1]]"}
+
 ::: {#fig-fa-biplot-1}
 ```{r}
 biplot.psych(
@@ -581,7 +582,7 @@ biplot(
 :::
 
 Loadings biplot over the four factors.
-:::
+::::
 
 ```{r}
 library(dplyr)
@@ -597,13 +598,13 @@ colnames(scores_df)[2:5] <- paste0("Factor", 1:4)
 # Calcoliamo la media e la deviazione standard per ogni fattore, raggruppati per prompt
 summary_table <- scores_df |>
   group_by(prompt) |>
-  summarise(across(starts_with("Factor"), 
-                   list(mu = mean, sigma = sd), 
+  summarise(across(starts_with("Factor"),
+                   list(mu = mean, sigma = sd),
                    .names = "{.col}_{.fn}"))
 
 # Riorganizziamo i dati in un formato tabellare con le coppie (mu, sigma)
 summary_table_formatted <- summary_table |>
-  mutate(across(contains("_mu"), 
+  mutate(across(contains("_mu"),
                 ~ sprintf("$\\mu=%.2f$, $\\sigma=%.2f$", .x, get(sub("_mu", "_sigma", cur_column())))))
 
 # Selezioniamo solo le colonne formattate
@@ -627,8 +628,6 @@ fa.multi.diagram(fam, f2labels = c("Negativity", "Positivity"), main="")
 
 Hierarchical (multilevel) factors' structure.
 :::
-
-Tabella con i quattro fattori: media e sd dei 4 prompt.
 
 ## References
 
