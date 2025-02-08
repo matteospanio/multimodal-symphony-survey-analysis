@@ -1,0 +1,3545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving
+and Interchange DTD v1.2 20190208//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2" article-type="other">
+  <front>
+    <journal-meta>
+      <journal-id/>
+      <journal-title-group>
+        <journal-title>Frontiers in Computer Science</journal-title>
+      </journal-title-group>
+      <issn/>
+      <publisher>
+        <publisher-name/>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <title-group>
+        <article-title>A Multimodal Symphony: Integrating Taste and Sound
+through Generative AI</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes">
+          <contrib-id contrib-id-type="orcid">0000-0002-2436-7208</contrib-id>
+          <name>
+            <surname>Spanio</surname>
+            <given-names>Matteo</given-names>
+          </name>
+          <string-name>Matteo Spanio</string-name>
+          <email>spanio@dei.unipd.it</email>
+          <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
+          <xref ref-type="aff" rid="aff-1">a</xref>
+          <xref ref-type="corresp" rid="cor-ms">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid">0000-0001-5950-7365</contrib-id>
+          <name>
+            <surname>Zampini</surname>
+            <given-names>Massimiliano</given-names>
+          </name>
+          <string-name>Massimiliano Zampini</string-name>
+          <email>massimiliano.zampini@unitn.it</email>
+          <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
+          <xref ref-type="aff" rid="aff-2">b</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid">0000-0001-9921-0590</contrib-id>
+          <name>
+            <surname>Rodà</surname>
+            <given-names>Antonio</given-names>
+          </name>
+          <string-name>Antonio Rodà</string-name>
+          <email>roda@dei.unipd.it</email>
+          <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
+          <xref ref-type="aff" rid="aff-1">a</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Pierucci</surname>
+            <given-names>Franco</given-names>
+          </name>
+          <string-name>Franco Pierucci</string-name>
+          <email>franco.pierucci@soundfood.it</email>
+          <role vocab="https://credit.niso.org" vocab-term="conceptualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/conceptualization/">conceptualization</role>
+          <xref ref-type="aff" rid="aff-3">c</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff-1">
+        <institution-wrap>
+          <institution>University of Padova</institution>
+        </institution-wrap>
+        <city>Padua</city>
+        <ext-link ext-link-type="uri" xlink:href="https://www.unipd.it">https://www.unipd.it</ext-link>
+      </aff>
+      <aff id="aff-2">
+        <institution-wrap>
+          <institution>University of Trento</institution>
+        </institution-wrap>
+        <city>Rovereto</city>
+        <ext-link ext-link-type="uri" xlink:href="https://www.unitn.it/">https://www.unitn.it/</ext-link>
+      </aff>
+      <aff id="aff-3">
+        <institution-wrap>
+          <institution>SoundFood s.r.l.</institution>
+        </institution-wrap>
+        <ext-link ext-link-type="uri" xlink:href="https://www.soundfood.it/">https://www.soundfood.it/</ext-link>
+      </aff>
+      <author-notes>
+        <corresp id="cor-ms">spanio@dei.unipd.it</corresp>
+      </author-notes>
+      <pub-date date-type="pub" publication-format="electronic" iso-8601-date="2025-02-01">
+        <year>2025</year>
+        <month>2</month>
+        <day>1</day>
+      </pub-date>
+      <volume>TBD</volume>
+      <issue>TBD</issue>
+      <history/>
+      <permissions>
+        <license license-type="creative-commons">
+          <ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/">https://creativecommons.org/licenses/by/4.0/</ali:license_ref>
+        </license>
+      </permissions>
+      <abstract>
+        <p>In recent decades, neuroscientific and psychological research by
+Spence, Wang, Zampini and others has traced direct relationships between
+taste and auditory perceptions. This article explores multimodal
+generative models capable of converting taste information into music,
+building on this foundational research. We provide a brief review of the
+state of the art in this field, highlighting key findings and
+methodologies. Additionally, we present an experiment in which we
+fine-tuned a Large Language Model (LLM) to generate music based on
+detailed taste descriptions provided for each musical piece. The results
+are promising: the fine-tuned model produces music that more coherently
+reflects the input taste descriptions compared to the non-fine-tuned
+model. This study represents a significant step towards understanding
+and developing embodied interactions between AI, sound, and taste,
+opening new possibilities in the field of generative AI.</p>
+      </abstract>
+      <kwd-group kwd-group-type="author">
+        <kwd>Generative AI</kwd>
+        <kwd>Crossmodal correspondences</kwd>
+        <kwd>Statistical analysis</kwd>
+        <kwd>Synesthesia</kwd>
+      </kwd-group>
+      <funding-group>
+        <funding-statement>We thank SoundFood s.r.l. for the economic support of
+this research.</funding-statement>
+      </funding-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="demographic-analysis">
+      <title>Demographic Analysis</title>
+      <p>The data used for this study were collected through an
+  <ext-link ext-link-type="uri" xlink:href="https://www.psytoolkit.org/c/3.4.6/survey?s=YmxcY">online
+  survey</ext-link> via PsyToolkit’s web platform
+  <xref alt="[1]" rid="ref-stoet_psytoolkit_2017" ref-type="bibr">[1]</xref>.
+  Inclusion criteria were that participants had to be over eighteen
+  years old and have access to a device capable of playing audio
+  files.</p>
+      <p>Of 141 people reached, only 111 completed the questionnaire (61
+  males, 46 females, 2 other, 2 prefer not to say, see
+  <xref alt="Figure 1 (a)" rid="fig-demographic-info-1">Figure 1
+  (a)</xref>), null or partial answers were considered as withdrawal
+  from the questionnaire, therefore only complete answers were taken
+  into consideration for the following analysis.</p>
+      <fig id="fig-demographic-info">
+        <caption>
+          <p>Figure 1: Demographic characteristics of the study’s
+    participants.</p>
+        </caption>
+        <table-wrap>
+          <table>
+            <colgroup>
+              <col width="50%"/>
+              <col width="50%"/>
+            </colgroup>
+            <tbody>
+              <tr>
+                <td align="left">
+                  <p specific-use="wrapper">
+                    <boxed-text>
+                      <fig id="fig-demographic-info-1">
+                        <caption>
+                          <p>(a) Gender distribution of
+                  participants.</p>
+                        </caption>
+                        <boxed-text>
+                          <boxed-text>
+                            <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-2-1.png"/>
+                          </boxed-text>
+                        </boxed-text>
+                      </fig>
+                    </boxed-text>
+                  </p>
+                </td>
+                <td align="left">
+                  <p specific-use="wrapper">
+                    <boxed-text>
+                      <fig id="fig-demographic-info-2">
+                        <caption>
+                          <p>(b) Distribution of participants’ ethnic
+                  backgrounds.</p>
+                        </caption>
+                        <boxed-text>
+                          <boxed-text>
+                            <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-3-1.png"/>
+                          </boxed-text>
+                        </boxed-text>
+                      </fig>
+                    </boxed-text>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+        <table-wrap>
+          <table>
+            <colgroup>
+              <col width="50%"/>
+              <col width="50%"/>
+            </colgroup>
+            <tbody>
+              <tr>
+                <td align="left">
+                  <p specific-use="wrapper">
+                    <boxed-text>
+                      <fig id="fig-demographic-info-3">
+                        <caption>
+                          <p>(c) Distribution of participants’ hearing
+                  experiences.</p>
+                        </caption>
+                        <boxed-text>
+                          <boxed-text>
+                            <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-4-1.png"/>
+                          </boxed-text>
+                        </boxed-text>
+                      </fig>
+                    </boxed-text>
+                  </p>
+                </td>
+                <td align="left">
+                  <p specific-use="wrapper">
+                    <boxed-text>
+                      <fig id="fig-demographic-info-4">
+                        <caption>
+                          <p>(d) Distribution of participants’ eating
+                  experiences.</p>
+                        </caption>
+                        <boxed-text>
+                          <boxed-text>
+                            <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-5-1.png"/>
+                          </boxed-text>
+                        </boxed-text>
+                      </fig>
+                    </boxed-text>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+      </fig>
+      <p>Overall the reached population has a mean age of 32 years, whit a
+  maximum of 75 and a minimum of 19. The mean time spent on the survey
+  was 9 minutes, with a standard deviation of 3.3. Along with age,
+  gender and execution time also data about musical and eating
+  experience have been collected:
+  <xref alt="Figure 1 (b)" rid="fig-demographic-info-2">Figure 1
+  (b)</xref> displays the ethnicity distribution of the population, the
+  majority of participants recognize themself as <italic>White/European
+  American</italic>, participants have an almost equally distributed
+  experience in listening to music (see
+  <xref alt="Figure 1 (c)" rid="fig-demographic-info-3">Figure 1
+  (c)</xref>), while just one participant recognized himself as an
+  experienced eater and the major part of the sample population declared
+  to be not-experienced in tasting food
+  (<xref alt="Figure 1 (d)" rid="fig-demographic-info-4">Figure 1
+  (d)</xref>).</p>
+    </sec>
+    <sec id="model-preference-analysis">
+      <title>Model Preference Analysis</title>
+      <p>The first task in the survey involved participants listening to two
+  audio clips, each corresponding to a taste description chosen randomly
+  from <italic>sweet</italic>, <italic>sour</italic>,
+  <italic>bitter</italic>, and <italic>salty</italic>. The goal was to
+  determine which audio sample best matched the given taste description.
+  The two clips were generated by different versions of the MusicGEN
+  model
+  <xref alt="[2]" rid="ref-copet2024simplecontrollablemusicgeneration" ref-type="bibr">[2]</xref>:
+  a fine-tuned version and the original
+  <xref ref-type="fn" rid="fn1">1</xref>, base model, released by Meta.
+  Participants were asked to express their preference for the first or
+  second clip by moving a slider ranging from 0 to 10, where 0 indicated
+  a strong preference for the first clip and 10 indicated a strong
+  preference for the second,
+  <xref alt="Figure 2" rid="fig-task1">Figure 2</xref> shows the
+  survey’s first question interface.</p>
+      <fig id="fig-task1">
+        <caption>
+          <p>Figure 2: Screenshot of the survey’s first task
+    interface.</p>
+        </caption>
+        <graphic mimetype="image" mime-subtype="png" xlink:href="assets/img/model_preference_woh.png"/>
+      </fig>
+      <p>To ensure randomization and avoid any bias, the taste descriptions
+  and audio clips were presented in a random order. In the analysis the
+  scores are normalized as follows: scores from 0 to 4 are interpreted
+  as a preference for the base model, scores between 6 and 10 indicate a
+  preference for the fine-tuned model, and scores of 5 are treated as
+  neutral.</p>
+      <p>The underlying research question guiding this task was to assess if
+  the fine tuned model output better matches taste descriptions than the
+  sounds generated by the base model.</p>
+      <sec id="data-visualization">
+        <title>Data Visualization</title>
+        <p>The distribution of scores across all participants is presented
+    in <xref alt="Figure 3 (a)" rid="fig-model-pref-1">Figure 3
+    (a)</xref>. The histogram and density plot show the spread of
+    scores, allowing us to visually assess the preference for one model
+    over the other. The base model and fine-tuned model preferences are
+    expected to manifest as peaks around the lower and higher end of the
+    score range, respectively.</p>
+        <fig id="fig-model-pref">
+          <caption>
+            <p>Figure 3: Score distribution between the two
+      models.</p>
+          </caption>
+          <table-wrap>
+            <table>
+              <colgroup>
+                <col width="50%"/>
+                <col width="50%"/>
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td align="left">
+                    <p specific-use="wrapper">
+                      <boxed-text>
+                        <fig id="fig-model-pref-1">
+                          <caption>
+                            <p>(a) Overall evalutation of the
+                    models.</p>
+                          </caption>
+                          <boxed-text>
+                            <boxed-text>
+                              <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-6-1.png"/>
+                            </boxed-text>
+                          </boxed-text>
+                        </fig>
+                      </boxed-text>
+                    </p>
+                  </td>
+                  <td align="left">
+                    <p specific-use="wrapper">
+                      <boxed-text>
+                        <fig id="fig-model-pref-2">
+                          <caption>
+                            <p>(b) Score boxplot by taste
+                    category.</p>
+                          </caption>
+                          <boxed-text>
+                            <boxed-text>
+                              <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-7-1.png"/>
+                            </boxed-text>
+                          </boxed-text>
+                        </fig>
+                      </boxed-text>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </table-wrap>
+          <table-wrap>
+            <table>
+              <colgroup>
+                <col width="100%"/>
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td align="left">
+                    <p specific-use="wrapper">
+                      <boxed-text>
+                        <fig id="fig-model-pref-3">
+                          <caption>
+                            <p>(c) Score distribution by taste
+                    category.</p>
+                          </caption>
+                          <boxed-text>
+                            <boxed-text>
+                              <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-8-1.png"/>
+                            </boxed-text>
+                          </boxed-text>
+                        </fig>
+                      </boxed-text>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </table-wrap>
+        </fig>
+        <p><xref alt="Figure 3 (b)" rid="fig-model-pref-2">Figure 3
+    (b)</xref> goes further by breaking down the preferences based on
+    the taste category described in the audio sample. Each taste
+    category is visualized using boxplots, where the median score for
+    each taste can be assessed. This enables us to examine whether the
+    model preference varies depending on the taste label, with the red
+    dashed line at a score of 5 acting as the neutral threshold.</p>
+      </sec>
+      <sec id="hypothesis-testing">
+        <title>Hypothesis Testing</title>
+        <p>Next, we assess whether the average score for the audio samples
+    significantly differs from a neutral score of 5, under the
+    assumption that the preference for the fine-tuned model should be
+    greater than this threshold. To do this, we need to verify whether
+    the data follows a normal distribution. In order to assess normality
+    of data we applied both visual and computational methods, then
+    firstly a Q-Q plot was generated to visually inspect the normality
+    of the score distribution, see
+    <xref alt="Figure 4" rid="fig-qqplot">Figure 4</xref>. The resulting
+    plot shows deviations from the expected straight line, indicating
+    that the scores do not follow a normal distribution.</p>
+        <fig id="fig-qqplot">
+          <caption>
+            <p>Figure 4: Q-Q plot to assess the normality
+      distribution of the collected data.</p>
+          </caption>
+          <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/fig-qqplot-1.png"/>
+        </fig>
+        <p>In addition the Shapiro-Wilk test confirmed that the data
+    significantly deviate from a normal distribution (with a resulting
+    <inline-formula><alternatives><tex-math><![CDATA[p]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>p</mml:mi></mml:math></alternatives></inline-formula>-value
+    equals to <inline-formula><alternatives><tex-math><![CDATA[2.516\times 10^{-14}]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mn>2.516</mml:mn><mml:mo>×</mml:mo><mml:msup><mml:mn>10</mml:mn><mml:mrow><mml:mi>−</mml:mi><mml:mn>14</mml:mn></mml:mrow></mml:msup></mml:mrow></mml:math></alternatives></inline-formula>).
+    Therefore, we decide to apply the non-parametric Wilcoxon
+    signed-rank test to see if the models preference score expressed by
+    participants has a mean major than the null preference (score equals
+    to five), more formally we are testing the hypothesis:</p>
+        <p><disp-formula><alternatives><tex-math><![CDATA[
+    H_0: \mu = 5 \quad H_1: \mu > 5
+    ]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="block"><mml:mrow><mml:msub><mml:mi>H</mml:mi><mml:mn>0</mml:mn></mml:msub><mml:mo>:</mml:mo><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mn>5</mml:mn><mml:mspace width="1.0em"/><mml:msub><mml:mi>H</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mo>:</mml:mo><mml:mi>μ</mml:mi><mml:mo>&gt;</mml:mo><mml:mn>5</mml:mn></mml:mrow></mml:math></alternatives></disp-formula>
+    where <inline-formula><alternatives><tex-math><![CDATA[H_0]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:msub><mml:mi>H</mml:mi><mml:mn>0</mml:mn></mml:msub></mml:math></alternatives></inline-formula>
+    means that there is no preference between the two models while
+    <inline-formula><alternatives><tex-math><![CDATA[H_1]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:msub><mml:mi>H</mml:mi><mml:mn>1</mml:mn></mml:msub></mml:math></alternatives></inline-formula>
+    means that the fine-tuned model is preferred over the other one with
+    a <inline-formula><alternatives><tex-math><![CDATA[95%]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mn>95</mml:mn></mml:math></alternatives></inline-formula>
+    confidence interval.</p>
+        <p>The result of the Wilcoxon test shows a
+    <inline-formula><alternatives><tex-math><![CDATA[p]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>p</mml:mi></mml:math></alternatives></inline-formula>-value
+    of <inline-formula><alternatives><tex-math><![CDATA[1.498\times 10^{-4}]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mn>1.498</mml:mn><mml:mo>×</mml:mo><mml:msup><mml:mn>10</mml:mn><mml:mrow><mml:mi>−</mml:mi><mml:mn>4</mml:mn></mml:mrow></mml:msup></mml:mrow></mml:math></alternatives></inline-formula>,
+    which is less than <inline-formula><alternatives><tex-math><![CDATA[0.05]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mn>0.05</mml:mn></mml:math></alternatives></inline-formula>,
+    indicating that we can reject the null hypothesis and conclude that
+    the median score is indeed significantly greater than
+    <inline-formula><alternatives><tex-math><![CDATA[5]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mn>5</mml:mn></mml:math></alternatives></inline-formula>.
+    This supports the hypothesis that the participants prefer the
+    fine-tuned model overall.</p>
+      </sec>
+      <sec id="post-hoc-analysis-by-taste">
+        <title>Post-Hoc Analysis by Taste</title>
+        <p>While the Wilcoxon test confirms that the overall preference goes
+    to the fine-tuned model the boxplots reveal a variation of the score
+    by taste, to confirm the variation we perform separate Wilcoxon
+    tests for each taste group (<italic>sweet</italic>,
+    <italic>sour</italic>, <italic>bitter</italic>,
+    <italic>salty</italic>). We use a Bonferroni correction to adjust
+    for the multiple comparisons and control the family-wise error rate.
+    The results of the post-hoc tests are shown below, in
+    <xref alt="Table 1" rid="tbl-wilcoxon-taste">Table 1</xref>.</p>
+        <fig id="tbl-wilcoxon-taste">
+          <caption>
+            <p>Table 1: Results of the Wilcoxon test performed on
+      data filtered by taste.</p>
+          </caption>
+          <table-wrap>
+            <table>
+              <thead>
+                <tr>
+                  <th align="left"/>
+                  <th align="right">p.value</th>
+                  <th align="right">adjusted.p.value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left">bitter</td>
+                  <td align="right">0.0034381</td>
+                  <td align="right">0.0137523</td>
+                </tr>
+                <tr>
+                  <td align="left">salty</td>
+                  <td align="right">0.9969070</td>
+                  <td align="right">1.0000000</td>
+                </tr>
+                <tr>
+                  <td align="left">sour</td>
+                  <td align="right">0.0076040</td>
+                  <td align="right">0.0304159</td>
+                </tr>
+                <tr>
+                  <td align="left">sweet</td>
+                  <td align="right">0.0000043</td>
+                  <td align="right">0.0000171</td>
+                </tr>
+              </tbody>
+            </table>
+          </table-wrap>
+        </fig>
+        <p>The analysis reveals that the fine-tuned model was significantly
+    preferred for the sweet taste category, with an adjusted
+    <inline-formula><alternatives><tex-math><![CDATA[p]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>p</mml:mi></mml:math></alternatives></inline-formula>-value
+    of <inline-formula><alternatives><tex-math><![CDATA[1.7060421\times 10^{-5}]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mn>1.7060421</mml:mn><mml:mo>×</mml:mo><mml:msup><mml:mn>10</mml:mn><mml:mrow><mml:mi>−</mml:mi><mml:mn>5</mml:mn></mml:mrow></mml:msup></mml:mrow></mml:math></alternatives></inline-formula>,
+    well below the conventional threshold of
+    <inline-formula><alternatives><tex-math><![CDATA[0.05]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mn>0.05</mml:mn></mml:math></alternatives></inline-formula>.
+    This suggests a strong alignment between the musical outputs and
+    participants’ expectations of sweetness. Conversely, the bitter and
+    sour categories also exhibited significant preferences, with
+    adjusted <inline-formula><alternatives><tex-math><![CDATA[p]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>p</mml:mi></mml:math></alternatives></inline-formula>-values
+    of <inline-formula><alternatives><tex-math><![CDATA[0.0137523]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mn>0.0137523</mml:mn></mml:math></alternatives></inline-formula>
+    and <inline-formula><alternatives><tex-math><![CDATA[0.0304159]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mn>0.0304159</mml:mn></mml:math></alternatives></inline-formula>,
+    respectively. However, these results, while statistically
+    significant, indicate a less robust preference compared to the sweet
+    category. Notably, the salty taste group did not demonstrate a
+    significant preference for the fine-tuned model, as indicated by an
+    adjusted <inline-formula><alternatives><tex-math><![CDATA[p]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>p</mml:mi></mml:math></alternatives></inline-formula>-value
+    near to 1. This lack of significance suggests that the model’s
+    performance may not align with participants’ expectations for salty
+    flavors, warranting further investigation into the underlying
+    factors influencing this outcome.</p>
+        <p>Since the finetuned model did not show to perform well on the
+    salty group, we performed a Wilcoxon test to test if its mean is
+    significally lower than the tie situation
+    (<inline-formula><alternatives><tex-math><![CDATA[H_0: \mu_{\text{salty}} = 5, H_1: \mu_{\text{salty}} < 5]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:msub><mml:mi>H</mml:mi><mml:mn>0</mml:mn></mml:msub><mml:mo>:</mml:mo><mml:msub><mml:mi>μ</mml:mi><mml:mtext mathvariant="normal">salty</mml:mtext></mml:msub><mml:mo>=</mml:mo><mml:mn>5</mml:mn><mml:mo>,</mml:mo><mml:msub><mml:mi>H</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mo>:</mml:mo><mml:msub><mml:mi>μ</mml:mi><mml:mtext mathvariant="normal">salty</mml:mtext></mml:msub><mml:mo>&lt;</mml:mo><mml:mn>5</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>)
+    the result is that the first model is statistically preferred over
+    the finetuned variant according to the Wilcoxon test with a
+    <inline-formula><alternatives><tex-math><![CDATA[p]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>p</mml:mi></mml:math></alternatives></inline-formula>-value
+    equal to <inline-formula><alternatives><tex-math><![CDATA[0.0031167]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mn>0.0031167</mml:mn></mml:math></alternatives></inline-formula>
+    without Bonferroni
+    correction<xref ref-type="fn" rid="fn2">2</xref>.</p>
+      </sec>
+    </sec>
+    <sec id="recognisability-of-tastes">
+      <title>Recognisability of Tastes</title>
+      <p>In the second task of the survey, participants were asked to listen
+  to musical pieces generated exclusively by the fine-tuned model to
+  better investigate the intrinsic qualities carried by the generated
+  music. Following each listening session, participants were required to
+  quantify the flavors they perceived in the music using a graduated
+  scale, ranging from 1 to 5 (where 1 means <italic>not at all</italic>
+  and 5 means <italic>very much</italic>), for each of the four primary
+  taste categories: salty, sweet, bitter, and sour. Unlike the first
+  task, there were no imposed labels for specific flavors, allowing
+  participants the freedom to associate values with each taste based on
+  their personal interpretations of the musical experience.
+  Additionally, to enrich the assessment, participants had to evaluate
+  their emotional responses to the music by rating various non-gustatory
+  parameters, including happiness, sadness, anger, disgust, fear,
+  surprise, hot, and cold.
+  <xref alt="Figure 5" rid="fig-task2">Figure 5</xref> displays the web
+  interface used to collect participants’ responses.</p>
+      <fig id="fig-task2">
+        <caption>
+          <p>Figure 5: Screenshot of the survey’s second task
+    interface.</p>
+        </caption>
+        <graphic mimetype="image" mime-subtype="png" xlink:href="assets/img/music_synesthesia.png"/>
+      </fig>
+      <p>The underlying research questions guiding this task were:</p>
+      <list list-type="order">
+        <list-item>
+          <p>Can the music generated by the model induce sensory-gustatory
+      responses?</p>
+        </list-item>
+        <list-item>
+          <p>What correlations exist between music and taste?</p>
+        </list-item>
+        <list-item>
+          <p>Which emotions mediate these sensory responses?</p>
+        </list-item>
+      </list>
+      <sec id="anova-test">
+        <title>ANOVA test</title>
+        <p>To address the first research question, we performed an Analysis
+    of Variance (ANOVA) to evaluate whether the participants’ ratings of
+    stimuli varied according to distinct stimulus characteristics. The
+    dependent variable was the value assigned by participants to each
+    stimulus, while the independent variables included stimulus-related
+    factors. The dataset was filtered to include only participants
+    identifying as <italic>Male</italic> or <italic>Female</italic>,
+    excluding participants classified as <italic>Professional
+    Eaters</italic> due to insufficient representation of this category.
+    This preprocessing step ensured robust and meaningful comparisons
+    between groups.</p>
+        <fig id="tbl-anova-value">
+          <caption>
+            <p>Table 2: Results of the ANOVA test.</p>
+          </caption>
+          <table-wrap>
+            <table>
+              <thead>
+                <tr>
+                  <th align="left"/>
+                  <th align="right">Df</th>
+                  <th align="right">Sum Sq</th>
+                  <th align="right">Mean Sq</th>
+                  <th align="right">F value</th>
+                  <th align="right">Pr(&gt;F)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left">prompt</td>
+                  <td align="right">3</td>
+                  <td align="right">29.402</td>
+                  <td align="right">9.801</td>
+                  <td align="right">8.739</td>
+                  <td align="right">0.000</td>
+                </tr>
+                <tr>
+                  <td align="left">adjective</td>
+                  <td align="right">11</td>
+                  <td align="right">188.478</td>
+                  <td align="right">17.134</td>
+                  <td align="right">15.279</td>
+                  <td align="right">0.000</td>
+                </tr>
+                <tr>
+                  <td align="left">hearing_experience</td>
+                  <td align="right">2</td>
+                  <td align="right">37.299</td>
+                  <td align="right">18.650</td>
+                  <td align="right">16.630</td>
+                  <td align="right">0.000</td>
+                </tr>
+                <tr>
+                  <td align="left">eating_experience</td>
+                  <td align="right">1</td>
+                  <td align="right">0.711</td>
+                  <td align="right">0.711</td>
+                  <td align="right">0.634</td>
+                  <td align="right">0.426</td>
+                </tr>
+                <tr>
+                  <td align="left">sex</td>
+                  <td align="right">1</td>
+                  <td align="right">0.069</td>
+                  <td align="right">0.069</td>
+                  <td align="right">0.061</td>
+                  <td align="right">0.804</td>
+                </tr>
+                <tr>
+                  <td align="left">prompt:adjective</td>
+                  <td align="right">33</td>
+                  <td align="right">214.757</td>
+                  <td align="right">6.508</td>
+                  <td align="right">5.803</td>
+                  <td align="right">0.000</td>
+                </tr>
+                <tr>
+                  <td align="left">Residuals</td>
+                  <td align="right">3764</td>
+                  <td align="right">4221.057</td>
+                  <td align="right">1.121</td>
+                  <td align="right">NA</td>
+                  <td align="right">NA</td>
+                </tr>
+              </tbody>
+            </table>
+          </table-wrap>
+        </fig>
+        <p>The results of the ANOVA are summarized in
+    <xref alt="Table 2" rid="tbl-anova-value">Table 2</xref>, which
+    presents the degrees of freedom (Df), sum of squares (Sum Sq), mean
+    squares (Mean Sq), F-statistics, and <inline-formula><alternatives><tex-math><![CDATA[p]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>p</mml:mi></mml:math></alternatives></inline-formula>-values
+    for each factor and interaction.</p>
+        <p>Prior to interpreting the results, the homoskedasticity
+    assumption was assessed by examining the residuals. A Shapiro-Wilk
+    test indicated evidence of heteroskedasticity
+    (<inline-formula><alternatives><tex-math><![CDATA[p < 0.05]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>p</mml:mi><mml:mo>&lt;</mml:mo><mml:mn>0.05</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>).
+    Despite this violation, the ANOVA analysis proceeded, following
+    recommendations from prior research
+    <xref alt="[3]" rid="ref-glass_1972_consequences_of_failure" ref-type="bibr">[3]</xref>,
+    <xref alt="[4]" rid="ref-harwell_1992_meta-analytic_methods" ref-type="bibr">[4]</xref>,
+    <xref alt="[5]" rid="ref-lix_1996_presence_of_variance" ref-type="bibr">[5]</xref>
+    suggesting that ANOVA is robust to deviations from normality under
+    moderate violations, particularly with large sample sizes such as
+    the one in this study. The results show that different prompts and
+    adjectives lead to significantly different adjectives quantified by
+    participants, similarly the adjectives used influence the
+    participants’ feelings. Furthermore the significant interaction
+    effect implies that the effect of one variable depends on the level
+    of the other. In other words, the way a prompt influences feelings
+    may vary depending on the adjective used. This result highlights
+    that the participants to the survey deliberately operated consistent
+    choices while evaluating the stimuli.</p>
+      </sec>
+      <sec id="post-hoc-analysis">
+        <title>Post-Hoc Analysis</title>
+        <p>To further explore the results of the ANOVA, we conducted Tukey’s
+    Honest Significant Difference (HSD) test. This post-hoc analysis is
+    particularly useful for identifying which specific group means are
+    significantly different from each other after finding a significant
+    overall effect in the ANOVA. Given that our analysis revealed
+    significant main effects for prompt, adjective, their interaction
+    and the hearing experience, it is essential to determine the nature
+    of these differences.</p>
+        <p>The Tukey test compares all possible pairs of group means while
+    controlling for the family-wise error rate, thus providing a robust
+    method for multiple comparisons. This is crucial in our context, as
+    we aim to understand how different prompts, adjectives and hearing
+    experience levels influence participants’ evaluations of the
+    stimuli. Upon executing the Tukey test, we examined the adjusted
+    <inline-formula><alternatives><tex-math><![CDATA[p]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>p</mml:mi></mml:math></alternatives></inline-formula>-values
+    for each comparison. The results indicated several significant
+    differences between specific combinations of prompts and adjectives,
+    as summarized in the table below:</p>
+        <table-wrap>
+          <caption>
+            <p>Tukey test between different prompts with a
+        <inline-formula><alternatives><tex-math><![CDATA[p]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>p</mml:mi></mml:math></alternatives></inline-formula>-value
+        lower 0.05.</p>
+          </caption>
+          <table>
+            <thead>
+              <tr>
+                <th align="left"/>
+                <th align="right">diff</th>
+                <th align="right">lwr</th>
+                <th align="right">upr</th>
+                <th align="right">p adj</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left">sour-bitter</td>
+                <td align="right">0.1539030</td>
+                <td align="right">0.0274663</td>
+                <td align="right">0.2803397</td>
+                <td align="right">0.0095792</td>
+              </tr>
+              <tr>
+                <td align="left">sour-salty</td>
+                <td align="right">0.1942878</td>
+                <td align="right">0.0661296</td>
+                <td align="right">0.3224460</td>
+                <td align="right">0.0005747</td>
+              </tr>
+              <tr>
+                <td align="left">sweet-sour</td>
+                <td align="right">-0.1932957</td>
+                <td align="right">-0.3214540</td>
+                <td align="right">-0.0651375</td>
+                <td align="right">0.0006229</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+        <table-wrap>
+          <caption>
+            <p>Tukey test between different adjectives with a
+        <inline-formula><alternatives><tex-math><![CDATA[p]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>p</mml:mi></mml:math></alternatives></inline-formula>-value
+        lower 0.05.</p>
+          </caption>
+          <table>
+            <thead>
+              <tr>
+                <th align="left"/>
+                <th align="right">diff</th>
+                <th align="right">lwr</th>
+                <th align="right">upr</th>
+                <th align="right">p adj</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left">bitter-anger</td>
+                <td align="right">0.4204204</td>
+                <td align="right">0.1439129</td>
+                <td align="right">0.6969280</td>
+                <td align="right">0.0000443</td>
+              </tr>
+              <tr>
+                <td align="left">cold-anger</td>
+                <td align="right">0.4774775</td>
+                <td align="right">0.2009699</td>
+                <td align="right">0.7539850</td>
+                <td align="right">0.0000012</td>
+              </tr>
+              <tr>
+                <td align="left">hot-anger</td>
+                <td align="right">0.5315315</td>
+                <td align="right">0.2550240</td>
+                <td align="right">0.8080391</td>
+                <td align="right">0.0000000</td>
+              </tr>
+              <tr>
+                <td align="left">sad-anger</td>
+                <td align="right">0.5765766</td>
+                <td align="right">0.3000690</td>
+                <td align="right">0.8530841</td>
+                <td align="right">0.0000000</td>
+              </tr>
+              <tr>
+                <td align="left">sweet-anger</td>
+                <td align="right">0.3723724</td>
+                <td align="right">0.0958648</td>
+                <td align="right">0.6488799</td>
+                <td align="right">0.0006699</td>
+              </tr>
+              <tr>
+                <td align="left">disgust-bitter</td>
+                <td align="right">-0.6336336</td>
+                <td align="right">-0.9101412</td>
+                <td align="right">-0.3571261</td>
+                <td align="right">0.0000000</td>
+              </tr>
+              <tr>
+                <td align="left">happy-bitter</td>
+                <td align="right">-0.3093093</td>
+                <td align="right">-0.5858169</td>
+                <td align="right">-0.0328018</td>
+                <td align="right">0.0136899</td>
+              </tr>
+              <tr>
+                <td align="left">surprise-bitter</td>
+                <td align="right">-0.2852853</td>
+                <td align="right">-0.5617928</td>
+                <td align="right">-0.0087777</td>
+                <td align="right">0.0360645</td>
+              </tr>
+              <tr>
+                <td align="left">disgust-cold</td>
+                <td align="right">-0.6906907</td>
+                <td align="right">-0.9671982</td>
+                <td align="right">-0.4141831</td>
+                <td align="right">0.0000000</td>
+              </tr>
+              <tr>
+                <td align="left">happy-cold</td>
+                <td align="right">-0.3663664</td>
+                <td align="right">-0.6428739</td>
+                <td align="right">-0.0898588</td>
+                <td align="right">0.0009180</td>
+              </tr>
+              <tr>
+                <td align="left">sour-cold</td>
+                <td align="right">-0.2852853</td>
+                <td align="right">-0.5617928</td>
+                <td align="right">-0.0087777</td>
+                <td align="right">0.0360645</td>
+              </tr>
+              <tr>
+                <td align="left">surprise-cold</td>
+                <td align="right">-0.3423423</td>
+                <td align="right">-0.6188499</td>
+                <td align="right">-0.0658348</td>
+                <td align="right">0.0030580</td>
+              </tr>
+              <tr>
+                <td align="left">fear-disgust</td>
+                <td align="right">0.4324324</td>
+                <td align="right">0.1559249</td>
+                <td align="right">0.7089400</td>
+                <td align="right">0.0000213</td>
+              </tr>
+              <tr>
+                <td align="left">happy-disgust</td>
+                <td align="right">0.3243243</td>
+                <td align="right">0.0478168</td>
+                <td align="right">0.6008319</td>
+                <td align="right">0.0070884</td>
+              </tr>
+              <tr>
+                <td align="left">hot-disgust</td>
+                <td align="right">0.7447447</td>
+                <td align="right">0.4682372</td>
+                <td align="right">1.0212523</td>
+                <td align="right">0.0000000</td>
+              </tr>
+              <tr>
+                <td align="left">sad-disgust</td>
+                <td align="right">0.7897898</td>
+                <td align="right">0.5132822</td>
+                <td align="right">1.0662973</td>
+                <td align="right">0.0000000</td>
+              </tr>
+              <tr>
+                <td align="left">salty-disgust</td>
+                <td align="right">0.4684685</td>
+                <td align="right">0.1919609</td>
+                <td align="right">0.7449760</td>
+                <td align="right">0.0000021</td>
+              </tr>
+              <tr>
+                <td align="left">sour-disgust</td>
+                <td align="right">0.4054054</td>
+                <td align="right">0.1288979</td>
+                <td align="right">0.6819130</td>
+                <td align="right">0.0001074</td>
+              </tr>
+              <tr>
+                <td align="left">surprise-disgust</td>
+                <td align="right">0.3483483</td>
+                <td align="right">0.0718408</td>
+                <td align="right">0.6248559</td>
+                <td align="right">0.0022833</td>
+              </tr>
+              <tr>
+                <td align="left">sweet-disgust</td>
+                <td align="right">0.5855856</td>
+                <td align="right">0.3090780</td>
+                <td align="right">0.8620931</td>
+                <td align="right">0.0000000</td>
+              </tr>
+              <tr>
+                <td align="left">hot-fear</td>
+                <td align="right">0.3123123</td>
+                <td align="right">0.0358048</td>
+                <td align="right">0.5888199</td>
+                <td align="right">0.0120394</td>
+              </tr>
+              <tr>
+                <td align="left">sad-fear</td>
+                <td align="right">0.3573574</td>
+                <td align="right">0.0808498</td>
+                <td align="right">0.6338649</td>
+                <td align="right">0.0014571</td>
+              </tr>
+              <tr>
+                <td align="left">hot-happy</td>
+                <td align="right">0.4204204</td>
+                <td align="right">0.1439129</td>
+                <td align="right">0.6969280</td>
+                <td align="right">0.0000443</td>
+              </tr>
+              <tr>
+                <td align="left">sad-happy</td>
+                <td align="right">0.4654655</td>
+                <td align="right">0.1889579</td>
+                <td align="right">0.7419730</td>
+                <td align="right">0.0000026</td>
+              </tr>
+              <tr>
+                <td align="left">sour-hot</td>
+                <td align="right">-0.3393393</td>
+                <td align="right">-0.6158469</td>
+                <td align="right">-0.0628318</td>
+                <td align="right">0.0035312</td>
+              </tr>
+              <tr>
+                <td align="left">surprise-hot</td>
+                <td align="right">-0.3963964</td>
+                <td align="right">-0.6729040</td>
+                <td align="right">-0.1198888</td>
+                <td align="right">0.0001798</td>
+              </tr>
+              <tr>
+                <td align="left">salty-sad</td>
+                <td align="right">-0.3213213</td>
+                <td align="right">-0.5978289</td>
+                <td align="right">-0.0448138</td>
+                <td align="right">0.0081111</td>
+              </tr>
+              <tr>
+                <td align="left">sour-sad</td>
+                <td align="right">-0.3843844</td>
+                <td align="right">-0.6608919</td>
+                <td align="right">-0.1078768</td>
+                <td align="right">0.0003509</td>
+              </tr>
+              <tr>
+                <td align="left">surprise-sad</td>
+                <td align="right">-0.4414414</td>
+                <td align="right">-0.7179490</td>
+                <td align="right">-0.1649339</td>
+                <td align="right">0.0000122</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+        <table-wrap>
+          <caption>
+            <p>Tukey test between different hearing experience groups with a
+        <inline-formula><alternatives><tex-math><![CDATA[p]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>p</mml:mi></mml:math></alternatives></inline-formula>-value
+        lower 0.05.</p>
+          </caption>
+          <table>
+            <colgroup>
+              <col width="36%"/>
+              <col width="16%"/>
+              <col width="16%"/>
+              <col width="16%"/>
+              <col width="15%"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <th align="left"/>
+                <th align="right">diff</th>
+                <th align="right">lwr</th>
+                <th align="right">upr</th>
+                <th align="right">p adj</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left">Amateur-Professional</td>
+                <td align="right">0.2268160</td>
+                <td align="right">0.1318865</td>
+                <td align="right">0.3217454</td>
+                <td align="right">0.0000001</td>
+              </tr>
+              <tr>
+                <td align="left">Not-experienced-Amateur</td>
+                <td align="right">-0.1684003</td>
+                <td align="right">-0.2698267</td>
+                <td align="right">-0.0669739</td>
+                <td align="right">0.0002967</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+        <p>These significant comparisons illuminate the subtleties in
+    participants’ responses to different stimuli. Certain
+    prompt-adjective combinations elicited stronger emotional reactions
+    than others, indicating that the interaction between prompts and
+    adjectives significantly shapes participants’ perceptions. Notably,
+    some combinations yielded adjusted <inline-formula><alternatives><tex-math><![CDATA[p]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>p</mml:mi></mml:math></alternatives></inline-formula>-values
+    below the conventional threshold of <inline-formula><alternatives><tex-math><![CDATA[0.05]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mn>0.05</mml:mn></mml:math></alternatives></inline-formula>,
+    signifying statistically significant differences. This finding
+    reinforces the ANOVA results, confirming that the presentation of
+    prompts and adjectives can meaningfully impact emotional
+    responses.</p>
+      </sec>
+      <sec id="interaction-between-prompt-and-adjective">
+        <title>Interaction between <italic>prompt</italic> and
+    <italic>adjective</italic></title>
+        <p>The ANOVA analysis evidenced also a significant interaction
+    between prompt and adjectives used to evaluate the sounds, as we
+    know, the design of the experiment fixed the prompt before
+    generating the audio files, therefore adjectives has to be intended
+    as dependent variables while the prompts are independent; in other
+    words, participants assigned different values to the adjectives to
+    the sounds on the basis of their generation prompt. This interaction
+    can be seen in
+    <xref alt="Figure 6" rid="fig-heatmap">Figure 6</xref>. In
+    particular <xref alt="Figure 6 (a)" rid="fig-heatmap-taste">Figure 6
+    (a)</xref> shows the mean value assigned to each taste adjective by
+    their prompt, we can clearly seen the major diagonal emerge by the
+    <inline-formula><alternatives><tex-math><![CDATA[4 \times 4]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mn>4</mml:mn><mml:mo>×</mml:mo><mml:mn>4</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>
+    matrix, this means that, the mean value assigned to the adjective
+    that matches the prompt of each sound is the highest. The rest of
+    the interaction between adjectives and prompt can be seen in
+    <xref alt="Figure 6 (b)" rid="fig-heatmap-emotions">Figure 6
+    (b)</xref> , a deeper analysis of emotional aspect assigned to the
+    sounds is presented in the next section.</p>
+        <fig id="fig-heatmap">
+          <caption>
+            <p>Figure 6: Heatmaps</p>
+          </caption>
+          <table-wrap>
+            <table>
+              <colgroup>
+                <col width="50%"/>
+                <col width="50%"/>
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td align="left">
+                    <p specific-use="wrapper">
+                      <boxed-text>
+                        <fig id="fig-heatmap-taste">
+                          <caption>
+                            <p>(a) Heatmap of perceived taste in
+                    correspondence of the intended one.</p>
+                          </caption>
+                          <boxed-text>
+                            <boxed-text>
+                              <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-19-1.png"/>
+                            </boxed-text>
+                          </boxed-text>
+                        </fig>
+                      </boxed-text>
+                    </p>
+                  </td>
+                  <td align="left">
+                    <p specific-use="wrapper">
+                      <boxed-text>
+                        <fig id="fig-heatmap-emotions">
+                          <caption>
+                            <p>(b) Heatmap of perceived emotional
+                    response in correspondence of the suggested
+                    taste.</p>
+                          </caption>
+                          <boxed-text>
+                            <boxed-text>
+                              <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-20-1.png"/>
+                            </boxed-text>
+                          </boxed-text>
+                        </fig>
+                      </boxed-text>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </table-wrap>
+        </fig>
+      </sec>
+      <sec id="factorial-analysis">
+        <title>Factorial analysis</title>
+        <p>To explore the underlying relationships between sensory qualities
+    and emotional states, we conducted a factor analysis on the
+    standardized data, excluding the ‘taste’ column. The initial step
+    involved calculating the correlation matrix, which revealed notable
+    relationships among the adjectives. Specifically, we observed that
+    negative emotions were positively correlated, while the pair
+    happy-sad exhibited a negative correlation. Furthermore, sweetness
+    demonstrated a strong correlation with happiness and warmth, whereas
+    bitterness was associated with anger and fear. Sourness, on the
+    other hand, was evidently correlated with disgust and fear. Other
+    variables did not show strong correlations at first glance,
+    prompting us to proceed with the factor analysis.</p>
+        <fig id="fig-corr-matrix">
+          <caption>
+            <p>Figure 7: Correlation matrix</p>
+          </caption>
+          <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/fig-corr-matrix-1.png"/>
+        </fig>
+        <p>The correlation matrix is illustrated in
+    <xref alt="Figure 7" rid="fig-corr-matrix">Figure 7</xref>,
+    showcasing these relationships clearly.</p>
+        <preformat>Parallel analysis suggests that the number of factors =  4  and the number of components =  NA </preformat>
+        <fig id="fig-scree-plots">
+          <caption>
+            <p>Figure 8: Parallel Analysis Scree Plots</p>
+          </caption>
+          <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/fig-scree-plots-1.png"/>
+        </fig>
+        <p>To determine the optimal number of factors for our analysis, we
+    employed parallel analysis, which indicated an optimal number of 4
+    factors. This estimation serves as a foundation for our subsequent
+    factor analysis. Following this, we executed the factor analysis
+    using the identified number of factors, applying an oblique rotation
+    (oblimin) to allow for potential correlations among the factors. The
+    results of the factor analysis, including the factor loadings, are
+    presented in the output. The factor loadings indicate how strongly
+    each variable contributes to the identified factors, providing
+    insights into the underlying structure of the data.</p>
+        <fig id="fig-factor-analysis">
+          <caption>
+            <p>Figure 9: Factor analysis graph.</p>
+          </caption>
+          <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/fig-factor-analysis-1.png"/>
+        </fig>
+        <preformat>
+Loadings:
+         ML3    ML1    ML2    ML4   
+salty           -0.231  0.111  0.535
+sweet            0.992              
+bitter    0.502                     
+sour      0.385 -0.128  0.178  0.226
+happy    -0.197  0.302 -0.132  0.492
+sad       0.292  0.259  0.236       
+anger     0.779                     
+disgust   0.694               -0.133
+fear      0.662         0.133  0.113
+surprise                0.120  0.526
+hot       0.140  0.361 -0.458  0.267
+cold                    0.882       
+
+                 ML3   ML1   ML2   ML4
+SS loadings    2.083 1.360 1.146 0.971
+Proportion Var 0.174 0.113 0.096 0.081
+Cumulative Var 0.174 0.287 0.382 0.463</preformat>
+        <p>To visualize the relationships among the factors, we generated
+    biplots for various factor combinations. The biplots, shown in the
+    subsequent figures, illustrate the distribution of variables across
+    the identified factors, highlighting the clustering of adjectives
+    associated with similar emotional states.</p>
+        <fig id="fig-fa-biplot">
+          <caption>
+            <p>Figure 10: Loadings biplot over the four
+      factors.</p>
+          </caption>
+          <table-wrap>
+            <table>
+              <colgroup>
+                <col width="50%"/>
+                <col width="50%"/>
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td align="left">
+                    <p specific-use="wrapper">
+                      <boxed-text>
+                        <fig id="fig-fa-biplot-1">
+                          <caption>
+                            <p>(a)</p>
+                          </caption>
+                          <boxed-text>
+                            <boxed-text>
+                              <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-26-1.png"/>
+                            </boxed-text>
+                          </boxed-text>
+                        </fig>
+                      </boxed-text>
+                    </p>
+                  </td>
+                  <td align="left">
+                    <p specific-use="wrapper">
+                      <boxed-text>
+                        <fig id="fig-fa-biplot-2">
+                          <caption>
+                            <p>(b)</p>
+                          </caption>
+                          <boxed-text>
+                            <boxed-text>
+                              <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-27-1.png"/>
+                            </boxed-text>
+                          </boxed-text>
+                        </fig>
+                      </boxed-text>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </table-wrap>
+          <table-wrap>
+            <table>
+              <colgroup>
+                <col width="50%"/>
+                <col width="50%"/>
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td align="left">
+                    <p specific-use="wrapper">
+                      <boxed-text>
+                        <fig id="fig-fa-biplot-3">
+                          <caption>
+                            <p>(c)</p>
+                          </caption>
+                          <boxed-text>
+                            <boxed-text>
+                              <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-28-1.png"/>
+                            </boxed-text>
+                          </boxed-text>
+                        </fig>
+                      </boxed-text>
+                    </p>
+                  </td>
+                  <td align="left">
+                    <p specific-use="wrapper">
+                      <boxed-text>
+                        <fig id="fig-fa-biplot-4">
+                          <caption>
+                            <p>(d)</p>
+                          </caption>
+                          <boxed-text>
+                            <boxed-text>
+                              <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-29-1.png"/>
+                            </boxed-text>
+                          </boxed-text>
+                        </fig>
+                      </boxed-text>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </table-wrap>
+        </fig>
+        <table-wrap>
+          <table>
+            <colgroup>
+              <col width="6%"/>
+              <col width="23%"/>
+              <col width="23%"/>
+              <col width="23%"/>
+              <col width="23%"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <th align="left">Prompt</th>
+                <th align="left">Fattore 1</th>
+                <th align="left">Fattore 2</th>
+                <th align="left">Fattore 3</th>
+                <th align="left">Fattore 4</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left">bitter</td>
+                <td align="left"><inline-formula><alternatives><tex-math><![CDATA[\mu=-0.01]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mi>−</mml:mi><mml:mn>0.01</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+            <inline-formula><alternatives><tex-math><![CDATA[\sigma=0.82]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>σ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.82</mml:mn></mml:mrow></mml:math></alternatives></inline-formula></td>
+                <td align="left"><inline-formula><alternatives><tex-math><![CDATA[\mu=-0.06]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mi>−</mml:mi><mml:mn>0.06</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+            <inline-formula><alternatives><tex-math><![CDATA[\sigma=0.99]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>σ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.99</mml:mn></mml:mrow></mml:math></alternatives></inline-formula></td>
+                <td align="left"><inline-formula><alternatives><tex-math><![CDATA[\mu=0.04]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.04</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+            <inline-formula><alternatives><tex-math><![CDATA[\sigma=0.91]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>σ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.91</mml:mn></mml:mrow></mml:math></alternatives></inline-formula></td>
+                <td align="left"><inline-formula><alternatives><tex-math><![CDATA[\mu=-0.16]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mi>−</mml:mi><mml:mn>0.16</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+            <inline-formula><alternatives><tex-math><![CDATA[\sigma=0.69]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>σ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.69</mml:mn></mml:mrow></mml:math></alternatives></inline-formula></td>
+              </tr>
+              <tr>
+                <td align="left">salty</td>
+                <td align="left"><inline-formula><alternatives><tex-math><![CDATA[\mu=-0.13]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mi>−</mml:mi><mml:mn>0.13</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+            <inline-formula><alternatives><tex-math><![CDATA[\sigma=0.87]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>σ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.87</mml:mn></mml:mrow></mml:math></alternatives></inline-formula></td>
+                <td align="left"><inline-formula><alternatives><tex-math><![CDATA[\mu=-0.03]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mi>−</mml:mi><mml:mn>0.03</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+            <inline-formula><alternatives><tex-math><![CDATA[\sigma=0.98]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>σ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.98</mml:mn></mml:mrow></mml:math></alternatives></inline-formula></td>
+                <td align="left"><inline-formula><alternatives><tex-math><![CDATA[\mu=0.01]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.01</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+            <inline-formula><alternatives><tex-math><![CDATA[\sigma=0.94]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>σ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.94</mml:mn></mml:mrow></mml:math></alternatives></inline-formula></td>
+                <td align="left"><inline-formula><alternatives><tex-math><![CDATA[\mu=0.02]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.02</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+            <inline-formula><alternatives><tex-math><![CDATA[\sigma=0.94]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>σ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.94</mml:mn></mml:mrow></mml:math></alternatives></inline-formula></td>
+              </tr>
+              <tr>
+                <td align="left">sour</td>
+                <td align="left"><inline-formula><alternatives><tex-math><![CDATA[\mu=0.50]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.50</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+            <inline-formula><alternatives><tex-math><![CDATA[\sigma=1.02]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>σ</mml:mi><mml:mo>=</mml:mo><mml:mn>1.02</mml:mn></mml:mrow></mml:math></alternatives></inline-formula></td>
+                <td align="left"><inline-formula><alternatives><tex-math><![CDATA[\mu=-0.39]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mi>−</mml:mi><mml:mn>0.39</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+            <inline-formula><alternatives><tex-math><![CDATA[\sigma=0.79]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>σ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.79</mml:mn></mml:mrow></mml:math></alternatives></inline-formula></td>
+                <td align="left"><inline-formula><alternatives><tex-math><![CDATA[\mu=0.23]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.23</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+            <inline-formula><alternatives><tex-math><![CDATA[\sigma=0.93]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>σ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.93</mml:mn></mml:mrow></mml:math></alternatives></inline-formula></td>
+                <td align="left"><inline-formula><alternatives><tex-math><![CDATA[\mu=0.11]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.11</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+            <inline-formula><alternatives><tex-math><![CDATA[\sigma=0.74]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>σ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.74</mml:mn></mml:mrow></mml:math></alternatives></inline-formula></td>
+              </tr>
+              <tr>
+                <td align="left">sweet</td>
+                <td align="left"><inline-formula><alternatives><tex-math><![CDATA[\mu=-0.30]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mi>−</mml:mi><mml:mn>0.30</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+            <inline-formula><alternatives><tex-math><![CDATA[\sigma=0.74]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>σ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.74</mml:mn></mml:mrow></mml:math></alternatives></inline-formula></td>
+                <td align="left"><inline-formula><alternatives><tex-math><![CDATA[\mu=0.43]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.43</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+            <inline-formula><alternatives><tex-math><![CDATA[\sigma=1.04]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>σ</mml:mi><mml:mo>=</mml:mo><mml:mn>1.04</mml:mn></mml:mrow></mml:math></alternatives></inline-formula></td>
+                <td align="left"><inline-formula><alternatives><tex-math><![CDATA[\mu=-0.26]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mi>−</mml:mi><mml:mn>0.26</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+            <inline-formula><alternatives><tex-math><![CDATA[\sigma=0.82]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>σ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.82</mml:mn></mml:mrow></mml:math></alternatives></inline-formula></td>
+                <td align="left"><inline-formula><alternatives><tex-math><![CDATA[\mu=0.05]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.05</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+            <inline-formula><alternatives><tex-math><![CDATA[\sigma=0.80]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>σ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.80</mml:mn></mml:mrow></mml:math></alternatives></inline-formula></td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+        <p>Lastly, we performed a multi-factor analysis to further explore
+    the dimensions of negativity and positivity within the data. The
+    results of this analysis are depicted in the multi-factor diagram,
+    which categorizes the factors into two overarching themes:
+    Negativity and Positivity.</p>
+        <fig id="fig-multilevel-fa">
+          <caption>
+            <p>Figure 11: Hierarchical (multilevel) factors’
+      structure.</p>
+          </caption>
+          <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-31-1.png"/>
+        </fig>
+      </sec>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="ref-stoet_psytoolkit_2017">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stoet</surname>
+              <given-names>Gijsbert</given-names>
+            </name>
+          </person-group>
+          <article-title>PsyToolkit: A novel web-based method for running online questionnaires and reaction-time experiments</article-title>
+          <source>Teaching of Psychology</source>
+          <year iso-8601-date="2017">2017</year>
+          <volume>44</volume>
+          <issue>1</issue>
+          <uri>https://doi.org/10.1177/0098628316677643</uri>
+          <pub-id pub-id-type="doi">10.1177/0098628316677643</pub-id>
+          <fpage>24</fpage>
+          <lpage>31</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-copet2024simplecontrollablemusicgeneration">
+        <element-citation publication-type="paper-conference">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Copet</surname>
+              <given-names>Jade</given-names>
+            </name>
+            <name>
+              <surname>Kreuk</surname>
+              <given-names>Felix</given-names>
+            </name>
+            <name>
+              <surname>Gat</surname>
+              <given-names>Itai</given-names>
+            </name>
+            <name>
+              <surname>Remez</surname>
+              <given-names>Tal</given-names>
+            </name>
+            <name>
+              <surname>Kant</surname>
+              <given-names>David</given-names>
+            </name>
+            <name>
+              <surname>Synnaeve</surname>
+              <given-names>Gabriel</given-names>
+            </name>
+            <name>
+              <surname>Adi</surname>
+              <given-names>Yossi</given-names>
+            </name>
+            <name>
+              <surname>Défossez</surname>
+              <given-names>Alexandre</given-names>
+            </name>
+          </person-group>
+          <article-title>Simple and controllable music generation</article-title>
+          <source>Proceedings of the 37th international conference on neural information processing systems</source>
+          <publisher-name>Curran Associates Inc.</publisher-name>
+          <publisher-loc>Red Hook, NY, USA</publisher-loc>
+          <year iso-8601-date="2023">2023</year>
+        </element-citation>
+      </ref>
+      <ref id="ref-lix_1996_presence_of_variance">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lix</surname>
+              <given-names>Lisa M.</given-names>
+            </name>
+            <name>
+              <surname>Keselman</surname>
+              <given-names>Joanne C.</given-names>
+            </name>
+            <name>
+              <surname>Keselman</surname>
+              <given-names>H. J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Consequences of assumption violations revisited: A quantitative review of alternatives to the one-way analysis of variance "f" test</article-title>
+          <source>Review of Educational Research</source>
+          <publisher-name>[Sage Publications, Inc., American Educational Research Association]</publisher-name>
+          <year iso-8601-date="1996">1996</year>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2025-01-21">2025</year>
+            <month>01</month>
+            <day>21</day>
+          </date-in-citation>
+          <volume>66</volume>
+          <issue>4</issue>
+          <issn>00346543, 19351046</issn>
+          <uri>http://www.jstor.org/stable/1170654</uri>
+          <fpage>579</fpage>
+          <lpage>619</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-harwell_1992_meta-analytic_methods">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Harwell</surname>
+              <given-names>Michael R.</given-names>
+            </name>
+            <name>
+              <surname>Rubinstein</surname>
+              <given-names>Elaine N.</given-names>
+            </name>
+            <name>
+              <surname>Hayes</surname>
+              <given-names>William S.</given-names>
+            </name>
+            <name>
+              <surname>Olds</surname>
+              <given-names>Corley C.</given-names>
+            </name>
+          </person-group>
+          <article-title>Summarizing monte carlo results in methodological research: The one- and two-factor fixed effects ANOVA cases</article-title>
+          <source>Journal of Educational Statistics</source>
+          <publisher-name>[Sage Publications, Inc., American Educational Research Association, American Statistical Association]</publisher-name>
+          <year iso-8601-date="1992">1992</year>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2025-01-21">2025</year>
+            <month>01</month>
+            <day>21</day>
+          </date-in-citation>
+          <volume>17</volume>
+          <issue>4</issue>
+          <issn>03629791</issn>
+          <uri>http://www.jstor.org/stable/1165127</uri>
+          <fpage>315</fpage>
+          <lpage>339</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-glass_1972_consequences_of_failure">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Glass</surname>
+              <given-names>Gene V</given-names>
+            </name>
+            <name>
+              <surname>Peckham</surname>
+              <given-names>Percy D.</given-names>
+            </name>
+            <name>
+              <surname>Sanders</surname>
+              <given-names>James R.</given-names>
+            </name>
+          </person-group>
+          <article-title>Consequences of failure to meet assumptions underlying the fixed effects analyses of variance and covariance</article-title>
+          <source>Review of Educational Research</source>
+          <year iso-8601-date="1972">1972</year>
+          <volume>42</volume>
+          <issue>3</issue>
+          <uri>https://doi.org/10.3102/00346543042003237</uri>
+          <pub-id pub-id-type="doi">10.3102/00346543042003237</pub-id>
+          <fpage>237</fpage>
+          <lpage>288</lpage>
+        </element-citation>
+      </ref>
+    </ref-list>
+    <fn-group>
+      <fn id="fn1">
+        <label>1</label>
+        <p>A full description of the model and its
+    finetuning process is available at the publication related to this
+    analysis.</p>
+      </fn>
+      <fn id="fn2">
+        <label>2</label>
+        <p>The Bonferroni correction has not been applied
+    due to the non indepenent nature of the test, in fact the test has
+    been performed after the results of the previous Wilcoxon test,
+    which, instead, was testing independently 4 groups.</p>
+      </fn>
+    </fn-group>
+  </back>
+  <sub-article article-type="notebook" id="nb-6-nb-article">
+    <front-stub>
+      <title-group>
+        <article-title>A Multimodal Symphony: Integrating Taste and Sound
+through Generative AI</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes">
+          <contrib-id contrib-id-type="orcid">0000-0002-2436-7208</contrib-id>
+          <name>
+            <surname>Spanio</surname>
+            <given-names>Matteo</given-names>
+          </name>
+          <string-name>Matteo Spanio</string-name>
+          <email>spanio@dei.unipd.it</email>
+          <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
+          <xref ref-type="aff" rid="aff-1-nb-article">a</xref>
+          <xref ref-type="corresp" rid="cor-ms-nb-article">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid">0000-0001-5950-7365</contrib-id>
+          <name>
+            <surname>Zampini</surname>
+            <given-names>Massimiliano</given-names>
+          </name>
+          <string-name>Massimiliano Zampini</string-name>
+          <email>massimiliano.zampini@unitn.it</email>
+          <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
+          <xref ref-type="aff" rid="aff-2-nb-article">b</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid">0000-0001-9921-0590</contrib-id>
+          <name>
+            <surname>Rodà</surname>
+            <given-names>Antonio</given-names>
+          </name>
+          <string-name>Antonio Rodà</string-name>
+          <email>roda@dei.unipd.it</email>
+          <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
+          <xref ref-type="aff" rid="aff-1-nb-article">a</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Pierucci</surname>
+            <given-names>Franco</given-names>
+          </name>
+          <string-name>Franco Pierucci</string-name>
+          <email>franco.pierucci@soundfood.it</email>
+          <role vocab="https://credit.niso.org" vocab-term="conceptualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/conceptualization/">conceptualization</role>
+          <xref ref-type="aff" rid="aff-3-nb-article">c</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff-1-nb-article">
+        <institution-wrap>
+          <institution>University of Padova</institution>
+        </institution-wrap>
+        <city>Padua</city>
+        <ext-link ext-link-type="uri" xlink:href="https://www.unipd.it">https://www.unipd.it</ext-link>
+      </aff>
+      <aff id="aff-2-nb-article">
+        <institution-wrap>
+          <institution>University of Trento</institution>
+        </institution-wrap>
+        <city>Rovereto</city>
+        <ext-link ext-link-type="uri" xlink:href="https://www.unitn.it/">https://www.unitn.it/</ext-link>
+      </aff>
+      <aff id="aff-3-nb-article">
+        <institution-wrap>
+          <institution>SoundFood s.r.l.</institution>
+        </institution-wrap>
+        <ext-link ext-link-type="uri" xlink:href="https://www.soundfood.it/">https://www.soundfood.it/</ext-link>
+      </aff>
+      <author-notes>
+        <corresp id="cor-ms-nb-article">spanio@dei.unipd.it</corresp>
+      </author-notes>
+      <abstract>
+        <p>In recent decades, neuroscientific and psychological research by
+Spence, Wang, Zampini and others has traced direct relationships between
+taste and auditory perceptions. This article explores multimodal
+generative models capable of converting taste information into music,
+building on this foundational research. We provide a brief review of the
+state of the art in this field, highlighting key findings and
+methodologies. Additionally, we present an experiment in which we
+fine-tuned a Large Language Model (LLM) to generate music based on
+detailed taste descriptions provided for each musical piece. The results
+are promising: the fine-tuned model produces music that more coherently
+reflects the input taste descriptions compared to the non-fine-tuned
+model. This study represents a significant step towards understanding
+and developing embodied interactions between AI, sound, and taste,
+opening new possibilities in the field of generative AI.</p>
+      </abstract>
+    </front-stub>
+    <body>
+      <sec id="demographic-analysis-nb-article">
+        <title>Demographic Analysis</title>
+        <p>The data used for this study were collected through an
+  <ext-link ext-link-type="uri" xlink:href="https://www.psytoolkit.org/c/3.4.6/survey?s=YmxcY">online
+  survey</ext-link> via PsyToolkit’s web platform
+  <xref alt="[1]" rid="ref-stoet_psytoolkit_2017-nb-article" ref-type="bibr">[1]</xref>.
+  Inclusion criteria were that participants had to be over eighteen
+  years old and have access to a device capable of playing audio
+  files.</p>
+        <sec specific-use="notebook-content">
+          <code language="r script">library(tidyverse)</code>
+          <boxed-text>
+            <preformat>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.4     ✔ tidyr     1.3.1
+✔ purrr     1.0.4     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</preformat>
+          </boxed-text>
+          <code language="r script">library(cluster)
+library(psych)</code>
+          <boxed-text>
+            <preformat>
+Caricamento pacchetto: 'psych'
+
+I seguenti oggetti sono mascherati da 'package:ggplot2':
+
+    %+%, alpha</preformat>
+          </boxed-text>
+          <code language="r script">source("src/load_data.R")</code>
+          <boxed-text>
+            <preformat>Warning: Using an external vector in selections was deprecated in tidyselect 1.1.0.
+ℹ Please use `all_of()` or `any_of()` instead.
+  # Was:
+  data %&gt;% select(columns)
+
+  # Now:
+  data %&gt;% select(all_of(columns))
+
+See &lt;https://tidyselect.r-lib.org/reference/faq-external-vector.html&gt;.</preformat>
+          </boxed-text>
+        </sec>
+        <p>Of 141 people reached, only 111 completed the questionnaire (61
+  males, 46 females, 2 other, 2 prefer not to say, see
+  <xref alt="Figure 1 (a)" rid="fig-demographic-info-1-nb-article">Figure 1
+  (a)</xref>), null or partial answers were considered as withdrawal
+  from the questionnaire, therefore only complete answers were taken
+  into consideration for the following analysis.</p>
+        <fig id="fig-demographic-info-nb-article">
+          <caption>
+            <p>Figure 1: Demographic characteristics of the study’s
+    participants.</p>
+          </caption>
+          <table-wrap>
+            <table>
+              <colgroup>
+                <col width="50%"/>
+                <col width="50%"/>
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td align="left">
+                    <p specific-use="wrapper">
+                      <boxed-text>
+                        <fig id="fig-demographic-info-1-nb-article">
+                          <caption>
+                            <p>(a) Gender distribution of
+                  participants.</p>
+                          </caption>
+                          <boxed-text>
+                            <code language="r script">library(ggplot2)
+
+# Assuming your dataframe is named 'data_pinfo' and the gender column is 'sex'
+gender_distribution &lt;- data_pinfo |&gt;
+  count(sex) |&gt;
+  mutate(percentage = n / sum(n) * 100)
+
+ggplot(gender_distribution, aes(x = "", y = percentage, fill = sex)) +
+  geom_bar(stat = "identity", width = 1) +
+  coord_polar("y") +
+  theme_void()</code>
+                            <boxed-text>
+                              <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-2-1.png"/>
+                            </boxed-text>
+                          </boxed-text>
+                        </fig>
+                      </boxed-text>
+                    </p>
+                  </td>
+                  <td align="left">
+                    <p specific-use="wrapper">
+                      <boxed-text>
+                        <fig id="fig-demographic-info-2-nb-article">
+                          <caption>
+                            <p>(b) Distribution of participants’ ethnic
+                  backgrounds.</p>
+                          </caption>
+                          <boxed-text>
+                            <code language="r script">ethnicity_distribution &lt;- data_pinfo |&gt;
+  count(ethnicity) |&gt;
+  mutate(percentage = n / sum(n) * 100)
+
+ggplot(ethnicity_distribution, aes(x = "", y = percentage, fill = ethnicity)) +
+  geom_bar(stat = "identity", width = 1) +
+  coord_polar("y") +
+  theme_void()</code>
+                            <boxed-text>
+                              <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-3-1.png"/>
+                            </boxed-text>
+                          </boxed-text>
+                        </fig>
+                      </boxed-text>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </table-wrap>
+          <table-wrap>
+            <table>
+              <colgroup>
+                <col width="50%"/>
+                <col width="50%"/>
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td align="left">
+                    <p specific-use="wrapper">
+                      <boxed-text>
+                        <fig id="fig-demographic-info-3-nb-article">
+                          <caption>
+                            <p>(c) Distribution of participants’ hearing
+                  experiences.</p>
+                          </caption>
+                          <boxed-text>
+                            <code language="r script">hearing_experience_distribution &lt;- data_pinfo |&gt;
+  count(hearing_experience) |&gt;
+  mutate(percentage = n / sum(n) * 100)
+
+ggplot(hearing_experience_distribution, aes(x = "", y = percentage, fill = hearing_experience)) +
+  geom_bar(stat = "identity", width = 1) +
+  coord_polar("y") +
+  theme_void()</code>
+                            <boxed-text>
+                              <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-4-1.png"/>
+                            </boxed-text>
+                          </boxed-text>
+                        </fig>
+                      </boxed-text>
+                    </p>
+                  </td>
+                  <td align="left">
+                    <p specific-use="wrapper">
+                      <boxed-text>
+                        <fig id="fig-demographic-info-4-nb-article">
+                          <caption>
+                            <p>(d) Distribution of participants’ eating
+                  experiences.</p>
+                          </caption>
+                          <boxed-text>
+                            <code language="r script">eating_experience_distribution &lt;- data_pinfo |&gt;
+  count(eating_experience) |&gt;
+  mutate(percentage = n / sum(n) * 100)
+
+ggplot(eating_experience_distribution, aes(x = "", y = percentage, fill = eating_experience)) +
+  geom_bar(stat = "identity", width = 1) +
+  coord_polar("y") +
+  theme_void()</code>
+                            <boxed-text>
+                              <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-5-1.png"/>
+                            </boxed-text>
+                          </boxed-text>
+                        </fig>
+                      </boxed-text>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </table-wrap>
+        </fig>
+        <p>Overall the reached population has a mean age of 32 years, whit a
+  maximum of 75 and a minimum of 19. The mean time spent on the survey
+  was 9 minutes, with a standard deviation of 3.3. Along with age,
+  gender and execution time also data about musical and eating
+  experience have been collected:
+  <xref alt="Figure 1 (b)" rid="fig-demographic-info-2-nb-article">Figure 1
+  (b)</xref> displays the ethnicity distribution of the population, the
+  majority of participants recognize themself as <italic>White/European
+  American</italic>, participants have an almost equally distributed
+  experience in listening to music (see
+  <xref alt="Figure 1 (c)" rid="fig-demographic-info-3-nb-article">Figure 1
+  (c)</xref>), while just one participant recognized himself as an
+  experienced eater and the major part of the sample population declared
+  to be not-experienced in tasting food
+  (<xref alt="Figure 1 (d)" rid="fig-demographic-info-4-nb-article">Figure 1
+  (d)</xref>).</p>
+      </sec>
+      <sec id="model-preference-analysis-nb-article">
+        <title>Model Preference Analysis</title>
+        <p>The first task in the survey involved participants listening to two
+  audio clips, each corresponding to a taste description chosen randomly
+  from <italic>sweet</italic>, <italic>sour</italic>,
+  <italic>bitter</italic>, and <italic>salty</italic>. The goal was to
+  determine which audio sample best matched the given taste description.
+  The two clips were generated by different versions of the MusicGEN
+  model
+  <xref alt="[2]" rid="ref-copet2024simplecontrollablemusicgeneration-nb-article" ref-type="bibr">[2]</xref>:
+  a fine-tuned version and the original
+  <xref ref-type="fn" rid="fn1-nb-article">1</xref>, base model, released by Meta.
+  Participants were asked to express their preference for the first or
+  second clip by moving a slider ranging from 0 to 10, where 0 indicated
+  a strong preference for the first clip and 10 indicated a strong
+  preference for the second,
+  <xref alt="Figure 2" rid="fig-task1-nb-article">Figure 2</xref> shows the
+  survey’s first question interface.</p>
+        <fig id="fig-task1-nb-article">
+          <caption>
+            <p>Figure 2: Screenshot of the survey’s first task
+    interface.</p>
+          </caption>
+          <graphic mimetype="image" mime-subtype="png" xlink:href="assets/img/model_preference_woh.png"/>
+        </fig>
+        <p>To ensure randomization and avoid any bias, the taste descriptions
+  and audio clips were presented in a random order. In the analysis the
+  scores are normalized as follows: scores from 0 to 4 are interpreted
+  as a preference for the base model, scores between 6 and 10 indicate a
+  preference for the fine-tuned model, and scores of 5 are treated as
+  neutral.</p>
+        <p>The underlying research question guiding this task was to assess if
+  the fine tuned model output better matches taste descriptions than the
+  sounds generated by the base model.</p>
+        <sec id="data-visualization-nb-article">
+          <title>Data Visualization</title>
+          <p>The distribution of scores across all participants is presented
+    in <xref alt="Figure 3 (a)" rid="fig-model-pref-1-nb-article">Figure 3
+    (a)</xref>. The histogram and density plot show the spread of
+    scores, allowing us to visually assess the preference for one model
+    over the other. The base model and fine-tuned model preferences are
+    expected to manifest as peaks around the lower and higher end of the
+    score range, respectively.</p>
+          <fig id="fig-model-pref-nb-article">
+            <caption>
+              <p>Figure 3: Score distribution between the two
+      models.</p>
+            </caption>
+            <table-wrap>
+              <table>
+                <colgroup>
+                  <col width="50%"/>
+                  <col width="50%"/>
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td align="left">
+                      <p specific-use="wrapper">
+                        <boxed-text>
+                          <fig id="fig-model-pref-1-nb-article">
+                            <caption>
+                              <p>(a) Overall evalutation of the
+                    models.</p>
+                            </caption>
+                            <boxed-text>
+                              <code language="r script">ggplot(data_task1, aes(x = score)) +
+  geom_histogram(binwidth = 1, fill = "skyblue", color = "black", alpha = 0.7) +
+  geom_density(aes(y = after_stat(count)), fill = "lightgreen", alpha = 0.4) +
+  labs(x = "Score", y = "Count") +
+  theme_minimal()</code>
+                              <boxed-text>
+                                <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-6-1.png"/>
+                              </boxed-text>
+                            </boxed-text>
+                          </fig>
+                        </boxed-text>
+                      </p>
+                    </td>
+                    <td align="left">
+                      <p specific-use="wrapper">
+                        <boxed-text>
+                          <fig id="fig-model-pref-2-nb-article">
+                            <caption>
+                              <p>(b) Score boxplot by taste
+                    category.</p>
+                            </caption>
+                            <boxed-text>
+                              <code language="r script">ggplot(data_task1, aes(x = prompt, y = score, fill = prompt)) +
+  geom_violin() +
+  geom_hline(yintercept = 5, color = "red", linetype = "dashed", linewidth = 1) +
+  labs(
+    x = "Taste",
+    y = "Score"
+  ) +
+  scale_fill_brewer(palette = "Set2") +
+  theme_minimal() +
+  theme(legend.position = "none")</code>
+                              <boxed-text>
+                                <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-7-1.png"/>
+                              </boxed-text>
+                            </boxed-text>
+                          </fig>
+                        </boxed-text>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </table-wrap>
+            <table-wrap>
+              <table>
+                <colgroup>
+                  <col width="100%"/>
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td align="left">
+                      <p specific-use="wrapper">
+                        <boxed-text>
+                          <fig id="fig-model-pref-3-nb-article">
+                            <caption>
+                              <p>(c) Score distribution by taste
+                    category.</p>
+                            </caption>
+                            <boxed-text>
+                              <code language="r script"># Creazione dei grafici per ciascun valore della variabile 'prompt'
+ggplot(data_task1, aes(x = score)) +
+  geom_histogram(binwidth = 1, fill = "skyblue", color = "black", alpha = 0.7) +
+  geom_density(aes(y = after_stat(count)), fill = "lightgreen", alpha = 0.4) +
+  labs(x = "Score", y = "Count") +
+  theme_minimal() +
+  facet_wrap(~ prompt, scales = "free_y")</code>
+                              <boxed-text>
+                                <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-8-1.png"/>
+                              </boxed-text>
+                            </boxed-text>
+                          </fig>
+                        </boxed-text>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </table-wrap>
+          </fig>
+          <p><xref alt="Figure 3 (b)" rid="fig-model-pref-2-nb-article">Figure 3
+    (b)</xref> goes further by breaking down the preferences based on
+    the taste category described in the audio sample. Each taste
+    category is visualized using boxplots, where the median score for
+    each taste can be assessed. This enables us to examine whether the
+    model preference varies depending on the taste label, with the red
+    dashed line at a score of 5 acting as the neutral threshold.</p>
+        </sec>
+        <sec id="hypothesis-testing-nb-article">
+          <title>Hypothesis Testing</title>
+          <p>Next, we assess whether the average score for the audio samples
+    significantly differs from a neutral score of 5, under the
+    assumption that the preference for the fine-tuned model should be
+    greater than this threshold. To do this, we need to verify whether
+    the data follows a normal distribution. In order to assess normality
+    of data we applied both visual and computational methods, then
+    firstly a Q-Q plot was generated to visually inspect the normality
+    of the score distribution, see
+    <xref alt="Figure 4" rid="fig-qqplot-nb-article">Figure 4</xref>. The resulting
+    plot shows deviations from the expected straight line, indicating
+    that the scores do not follow a normal distribution.</p>
+          <sec id="cell-fig-qqplot-nb-article" specific-use="notebook-content">
+            <code language="r script">library(qqplotr)</code>
+            <boxed-text>
+              <preformat>
+Caricamento pacchetto: 'qqplotr'</preformat>
+            </boxed-text>
+            <boxed-text>
+              <preformat>I seguenti oggetti sono mascherati da 'package:ggplot2':
+
+    stat_qq_line, StatQqLine</preformat>
+            </boxed-text>
+            <code language="r script">ggplot(data_task1, aes(sample = score)) +
+  stat_qq_band(bandType="pointwise", fill="#8DA0CB",alpha=0.4) +
+  stat_qq_line(color = "#8DA0CB") +
+  stat_qq_point() +
+  labs(
+    x = "Theoretical Quantiles",
+    y = "Sample Quantiles"
+  ) +
+  theme_minimal()</code>
+            <fig id="fig-qqplot-nb-article">
+              <caption>
+                <p>Figure 4: Q-Q plot to assess the normality
+      distribution of the collected data.</p>
+              </caption>
+              <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/fig-qqplot-1.png"/>
+            </fig>
+          </sec>
+          <sec specific-use="notebook-content">
+            <code language="r script"># Test Shapiro-Wilk
+shapiro.pvalue &lt;- (shapiro.test(data_task1$score))$p.value</code>
+          </sec>
+          <p>In addition the Shapiro-Wilk test confirmed that the data
+    significantly deviate from a normal distribution (with a resulting
+    <inline-formula><alternatives><tex-math><![CDATA[p]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>p</mml:mi></mml:math></alternatives></inline-formula>-value
+    equals to <inline-formula><alternatives><tex-math><![CDATA[2.516\times 10^{-14}]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mn>2.516</mml:mn><mml:mo>×</mml:mo><mml:msup><mml:mn>10</mml:mn><mml:mrow><mml:mi>−</mml:mi><mml:mn>14</mml:mn></mml:mrow></mml:msup></mml:mrow></mml:math></alternatives></inline-formula>).
+    Therefore, we decide to apply the non-parametric Wilcoxon
+    signed-rank test to see if the models preference score expressed by
+    participants has a mean major than the null preference (score equals
+    to five), more formally we are testing the hypothesis:</p>
+          <p><disp-formula><alternatives><tex-math><![CDATA[
+    H_0: \mu = 5 \quad H_1: \mu > 5
+    ]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="block"><mml:mrow><mml:msub><mml:mi>H</mml:mi><mml:mn>0</mml:mn></mml:msub><mml:mo>:</mml:mo><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mn>5</mml:mn><mml:mspace width="1.0em"/><mml:msub><mml:mi>H</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mo>:</mml:mo><mml:mi>μ</mml:mi><mml:mo>&gt;</mml:mo><mml:mn>5</mml:mn></mml:mrow></mml:math></alternatives></disp-formula>
+    where <inline-formula><alternatives><tex-math><![CDATA[H_0]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:msub><mml:mi>H</mml:mi><mml:mn>0</mml:mn></mml:msub></mml:math></alternatives></inline-formula>
+    means that there is no preference between the two models while
+    <inline-formula><alternatives><tex-math><![CDATA[H_1]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:msub><mml:mi>H</mml:mi><mml:mn>1</mml:mn></mml:msub></mml:math></alternatives></inline-formula>
+    means that the fine-tuned model is preferred over the other one with
+    a <inline-formula><alternatives><tex-math><![CDATA[95%]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mn>95</mml:mn></mml:math></alternatives></inline-formula>
+    confidence interval.</p>
+          <sec specific-use="notebook-content">
+            <code language="r script">alpha &lt;- 0.05
+hyp_mu &lt;- 5
+
+wilcox.pvalue &lt;- (wilcox.test(data_task1$score, mu = hyp_mu, alternative = "greater", conf.level = 1-alpha))$p.value</code>
+          </sec>
+          <p>The result of the Wilcoxon test shows a
+    <inline-formula><alternatives><tex-math><![CDATA[p]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>p</mml:mi></mml:math></alternatives></inline-formula>-value
+    of <inline-formula><alternatives><tex-math><![CDATA[1.498\times 10^{-4}]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mn>1.498</mml:mn><mml:mo>×</mml:mo><mml:msup><mml:mn>10</mml:mn><mml:mrow><mml:mi>−</mml:mi><mml:mn>4</mml:mn></mml:mrow></mml:msup></mml:mrow></mml:math></alternatives></inline-formula>,
+    which is less than <inline-formula><alternatives><tex-math><![CDATA[0.05]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mn>0.05</mml:mn></mml:math></alternatives></inline-formula>,
+    indicating that we can reject the null hypothesis and conclude that
+    the median score is indeed significantly greater than
+    <inline-formula><alternatives><tex-math><![CDATA[5]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mn>5</mml:mn></mml:math></alternatives></inline-formula>.
+    This supports the hypothesis that the participants prefer the
+    fine-tuned model overall.</p>
+        </sec>
+        <sec id="post-hoc-analysis-by-taste-nb-article">
+          <title>Post-Hoc Analysis by Taste</title>
+          <p>While the Wilcoxon test confirms that the overall preference goes
+    to the fine-tuned model the boxplots reveal a variation of the score
+    by taste, to confirm the variation we perform separate Wilcoxon
+    tests for each taste group (<italic>sweet</italic>,
+    <italic>sour</italic>, <italic>bitter</italic>,
+    <italic>salty</italic>). We use a Bonferroni correction to adjust
+    for the multiple comparisons and control the family-wise error rate.
+    The results of the post-hoc tests are shown below, in
+    <xref alt="Table 1" rid="tbl-wilcoxon-taste-nb-article">Table 1</xref>.</p>
+          <sec specific-use="notebook-content">
+            <code language="r script">library(knitr)
+
+levels_taste &lt;- unique(data_task1$prompt)
+
+# List to stpre the results
+test_results &lt;- list()
+
+# Execute the Wicoxon test for each category
+for (level in levels_taste) {
+  # Filter data
+  subset_data &lt;- data_task1[data_task1$prompt == level, ]
+
+  test_result &lt;- wilcox.test(subset_data$score, mu = 5, alternative = "greater", conf.level = 1 - alpha)
+
+  # Add the category result
+  test_results[[level]] &lt;- test_result
+}
+
+# extract the pvalues
+p_values &lt;- sapply(test_results, function(res) res$p.value)
+
+# apply the Bonferroni correction
+adjusted_p_values &lt;- p.adjust(p_values, method = "bonferroni")
+
+# Visualizza i risultati con i p-value corretti
+result_table &lt;- data.frame(
+  Taste = names(test_results),
+  p.value = p_values,
+  adjusted.p.value = adjusted_p_values
+) |&gt; select(c("p.value", "adjusted.p.value"))
+
+kable(result_table)</code>
+            <fig id="tbl-wilcoxon-taste-nb-article">
+              <caption>
+                <p>Table 1: Results of the Wilcoxon test performed on
+      data filtered by taste.</p>
+              </caption>
+              <table-wrap>
+                <table>
+                  <thead>
+                    <tr>
+                      <th align="left"/>
+                      <th align="right">p.value</th>
+                      <th align="right">adjusted.p.value</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td align="left">bitter</td>
+                      <td align="right">0.0034381</td>
+                      <td align="right">0.0137523</td>
+                    </tr>
+                    <tr>
+                      <td align="left">salty</td>
+                      <td align="right">0.9969070</td>
+                      <td align="right">1.0000000</td>
+                    </tr>
+                    <tr>
+                      <td align="left">sour</td>
+                      <td align="right">0.0076040</td>
+                      <td align="right">0.0304159</td>
+                    </tr>
+                    <tr>
+                      <td align="left">sweet</td>
+                      <td align="right">0.0000043</td>
+                      <td align="right">0.0000171</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </table-wrap>
+            </fig>
+          </sec>
+          <p>The analysis reveals that the fine-tuned model was significantly
+    preferred for the sweet taste category, with an adjusted
+    <inline-formula><alternatives><tex-math><![CDATA[p]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>p</mml:mi></mml:math></alternatives></inline-formula>-value
+    of <inline-formula><alternatives><tex-math><![CDATA[1.7060421\times 10^{-5}]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mn>1.7060421</mml:mn><mml:mo>×</mml:mo><mml:msup><mml:mn>10</mml:mn><mml:mrow><mml:mi>−</mml:mi><mml:mn>5</mml:mn></mml:mrow></mml:msup></mml:mrow></mml:math></alternatives></inline-formula>,
+    well below the conventional threshold of
+    <inline-formula><alternatives><tex-math><![CDATA[0.05]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mn>0.05</mml:mn></mml:math></alternatives></inline-formula>.
+    This suggests a strong alignment between the musical outputs and
+    participants’ expectations of sweetness. Conversely, the bitter and
+    sour categories also exhibited significant preferences, with
+    adjusted <inline-formula><alternatives><tex-math><![CDATA[p]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>p</mml:mi></mml:math></alternatives></inline-formula>-values
+    of <inline-formula><alternatives><tex-math><![CDATA[0.0137523]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mn>0.0137523</mml:mn></mml:math></alternatives></inline-formula>
+    and <inline-formula><alternatives><tex-math><![CDATA[0.0304159]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mn>0.0304159</mml:mn></mml:math></alternatives></inline-formula>,
+    respectively. However, these results, while statistically
+    significant, indicate a less robust preference compared to the sweet
+    category. Notably, the salty taste group did not demonstrate a
+    significant preference for the fine-tuned model, as indicated by an
+    adjusted <inline-formula><alternatives><tex-math><![CDATA[p]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>p</mml:mi></mml:math></alternatives></inline-formula>-value
+    near to 1. This lack of significance suggests that the model’s
+    performance may not align with participants’ expectations for salty
+    flavors, warranting further investigation into the underlying
+    factors influencing this outcome.</p>
+          <sec specific-use="notebook-content">
+            <code language="r script">subset_data &lt;- data_task1[data_task1$prompt == "salty", ]
+salty_base &lt;- wilcox.test(subset_data$score, mu = 5, alternative = "less", conf.level =1 - alpha)$p.value</code>
+          </sec>
+          <p>Since the finetuned model did not show to perform well on the
+    salty group, we performed a Wilcoxon test to test if its mean is
+    significally lower than the tie situation
+    (<inline-formula><alternatives><tex-math><![CDATA[H_0: \mu_{\text{salty}} = 5, H_1: \mu_{\text{salty}} < 5]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:msub><mml:mi>H</mml:mi><mml:mn>0</mml:mn></mml:msub><mml:mo>:</mml:mo><mml:msub><mml:mi>μ</mml:mi><mml:mtext mathvariant="normal">salty</mml:mtext></mml:msub><mml:mo>=</mml:mo><mml:mn>5</mml:mn><mml:mo>,</mml:mo><mml:msub><mml:mi>H</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mo>:</mml:mo><mml:msub><mml:mi>μ</mml:mi><mml:mtext mathvariant="normal">salty</mml:mtext></mml:msub><mml:mo>&lt;</mml:mo><mml:mn>5</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>)
+    the result is that the first model is statistically preferred over
+    the finetuned variant according to the Wilcoxon test with a
+    <inline-formula><alternatives><tex-math><![CDATA[p]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>p</mml:mi></mml:math></alternatives></inline-formula>-value
+    equal to <inline-formula><alternatives><tex-math><![CDATA[0.0031167]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mn>0.0031167</mml:mn></mml:math></alternatives></inline-formula>
+    without Bonferroni
+    correction<xref ref-type="fn" rid="fn2-nb-article">2</xref>.</p>
+        </sec>
+      </sec>
+      <sec id="recognisability-of-tastes-nb-article">
+        <title>Recognisability of Tastes</title>
+        <p>In the second task of the survey, participants were asked to listen
+  to musical pieces generated exclusively by the fine-tuned model to
+  better investigate the intrinsic qualities carried by the generated
+  music. Following each listening session, participants were required to
+  quantify the flavors they perceived in the music using a graduated
+  scale, ranging from 1 to 5 (where 1 means <italic>not at all</italic>
+  and 5 means <italic>very much</italic>), for each of the four primary
+  taste categories: salty, sweet, bitter, and sour. Unlike the first
+  task, there were no imposed labels for specific flavors, allowing
+  participants the freedom to associate values with each taste based on
+  their personal interpretations of the musical experience.
+  Additionally, to enrich the assessment, participants had to evaluate
+  their emotional responses to the music by rating various non-gustatory
+  parameters, including happiness, sadness, anger, disgust, fear,
+  surprise, hot, and cold.
+  <xref alt="Figure 5" rid="fig-task2-nb-article">Figure 5</xref> displays the web
+  interface used to collect participants’ responses.</p>
+        <fig id="fig-task2-nb-article">
+          <caption>
+            <p>Figure 5: Screenshot of the survey’s second task
+    interface.</p>
+          </caption>
+          <graphic mimetype="image" mime-subtype="png" xlink:href="assets/img/music_synesthesia.png"/>
+        </fig>
+        <p>The underlying research questions guiding this task were:</p>
+        <list list-type="order">
+          <list-item>
+            <p>Can the music generated by the model induce sensory-gustatory
+      responses?</p>
+          </list-item>
+          <list-item>
+            <p>What correlations exist between music and taste?</p>
+          </list-item>
+          <list-item>
+            <p>Which emotions mediate these sensory responses?</p>
+          </list-item>
+        </list>
+        <sec id="anova-test-nb-article">
+          <title>ANOVA test</title>
+          <p>To address the first research question, we performed an Analysis
+    of Variance (ANOVA) to evaluate whether the participants’ ratings of
+    stimuli varied according to distinct stimulus characteristics. The
+    dependent variable was the value assigned by participants to each
+    stimulus, while the independent variables included stimulus-related
+    factors. The dataset was filtered to include only participants
+    identifying as <italic>Male</italic> or <italic>Female</italic>,
+    excluding participants classified as <italic>Professional
+    Eaters</italic> due to insufficient representation of this category.
+    This preprocessing step ensured robust and meaningful comparisons
+    between groups.</p>
+          <sec specific-use="notebook-content">
+            <code language="r script">library(broom)
+
+df &lt;- data_aov |&gt;
+  filter(sex == "Male" | sex == "Female") |&gt;  # too few people recognize themself as non male/female
+  filter(eating_experience != "Professional") # the only professional eater is filtered out
+
+res &lt;- aov(value ~ prompt * adjective + hearing_experience + eating_experience + sex, data = df)
+kable(tidy(res), digits = c(0, 0, 3, 3, 3, 3),
+      col.names = c("", "Df", "Sum Sq", "Mean Sq", "F value", "Pr(&gt;F)"))</code>
+            <fig id="tbl-anova-value-nb-article">
+              <caption>
+                <p>Table 2: Results of the ANOVA test.</p>
+              </caption>
+              <table-wrap>
+                <table>
+                  <thead>
+                    <tr>
+                      <th align="left"/>
+                      <th align="right">Df</th>
+                      <th align="right">Sum Sq</th>
+                      <th align="right">Mean Sq</th>
+                      <th align="right">F value</th>
+                      <th align="right">Pr(&gt;F)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td align="left">prompt</td>
+                      <td align="right">3</td>
+                      <td align="right">29.402</td>
+                      <td align="right">9.801</td>
+                      <td align="right">8.739</td>
+                      <td align="right">0.000</td>
+                    </tr>
+                    <tr>
+                      <td align="left">adjective</td>
+                      <td align="right">11</td>
+                      <td align="right">188.478</td>
+                      <td align="right">17.134</td>
+                      <td align="right">15.279</td>
+                      <td align="right">0.000</td>
+                    </tr>
+                    <tr>
+                      <td align="left">hearing_experience</td>
+                      <td align="right">2</td>
+                      <td align="right">37.299</td>
+                      <td align="right">18.650</td>
+                      <td align="right">16.630</td>
+                      <td align="right">0.000</td>
+                    </tr>
+                    <tr>
+                      <td align="left">eating_experience</td>
+                      <td align="right">1</td>
+                      <td align="right">0.711</td>
+                      <td align="right">0.711</td>
+                      <td align="right">0.634</td>
+                      <td align="right">0.426</td>
+                    </tr>
+                    <tr>
+                      <td align="left">sex</td>
+                      <td align="right">1</td>
+                      <td align="right">0.069</td>
+                      <td align="right">0.069</td>
+                      <td align="right">0.061</td>
+                      <td align="right">0.804</td>
+                    </tr>
+                    <tr>
+                      <td align="left">prompt:adjective</td>
+                      <td align="right">33</td>
+                      <td align="right">214.757</td>
+                      <td align="right">6.508</td>
+                      <td align="right">5.803</td>
+                      <td align="right">0.000</td>
+                    </tr>
+                    <tr>
+                      <td align="left">Residuals</td>
+                      <td align="right">3764</td>
+                      <td align="right">4221.057</td>
+                      <td align="right">1.121</td>
+                      <td align="right">NA</td>
+                      <td align="right">NA</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </table-wrap>
+            </fig>
+          </sec>
+          <p>The results of the ANOVA are summarized in
+    <xref alt="Table 2" rid="tbl-anova-value-nb-article">Table 2</xref>, which
+    presents the degrees of freedom (Df), sum of squares (Sum Sq), mean
+    squares (Mean Sq), F-statistics, and <inline-formula><alternatives><tex-math><![CDATA[p]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>p</mml:mi></mml:math></alternatives></inline-formula>-values
+    for each factor and interaction.</p>
+          <p>Prior to interpreting the results, the homoskedasticity
+    assumption was assessed by examining the residuals. A Shapiro-Wilk
+    test indicated evidence of heteroskedasticity
+    (<inline-formula><alternatives><tex-math><![CDATA[p < 0.05]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>p</mml:mi><mml:mo>&lt;</mml:mo><mml:mn>0.05</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>).
+    Despite this violation, the ANOVA analysis proceeded, following
+    recommendations from prior research
+    <xref alt="[3]" rid="ref-glass_1972_consequences_of_failure-nb-article" ref-type="bibr">[3]</xref>,
+    <xref alt="[4]" rid="ref-harwell_1992_meta-analytic_methods-nb-article" ref-type="bibr">[4]</xref>,
+    <xref alt="[5]" rid="ref-lix_1996_presence_of_variance-nb-article" ref-type="bibr">[5]</xref>
+    suggesting that ANOVA is robust to deviations from normality under
+    moderate violations, particularly with large sample sizes such as
+    the one in this study. The results show that different prompts and
+    adjectives lead to significantly different adjectives quantified by
+    participants, similarly the adjectives used influence the
+    participants’ feelings. Furthermore the significant interaction
+    effect implies that the effect of one variable depends on the level
+    of the other. In other words, the way a prompt influences feelings
+    may vary depending on the adjective used. This result highlights
+    that the participants to the survey deliberately operated consistent
+    choices while evaluating the stimuli.</p>
+        </sec>
+        <sec id="post-hoc-analysis-nb-article">
+          <title>Post-Hoc Analysis</title>
+          <p>To further explore the results of the ANOVA, we conducted Tukey’s
+    Honest Significant Difference (HSD) test. This post-hoc analysis is
+    particularly useful for identifying which specific group means are
+    significantly different from each other after finding a significant
+    overall effect in the ANOVA. Given that our analysis revealed
+    significant main effects for prompt, adjective, their interaction
+    and the hearing experience, it is essential to determine the nature
+    of these differences.</p>
+          <p>The Tukey test compares all possible pairs of group means while
+    controlling for the family-wise error rate, thus providing a robust
+    method for multiple comparisons. This is crucial in our context, as
+    we aim to understand how different prompts, adjectives and hearing
+    experience levels influence participants’ evaluations of the
+    stimuli. Upon executing the Tukey test, we examined the adjusted
+    <inline-formula><alternatives><tex-math><![CDATA[p]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>p</mml:mi></mml:math></alternatives></inline-formula>-values
+    for each comparison. The results indicated several significant
+    differences between specific combinations of prompts and adjectives,
+    as summarized in the table below:</p>
+          <sec specific-use="notebook-content">
+            <code language="r script">res &lt;- aov(value ~ prompt + adjective + hearing_experience, data = data_aov)
+tukey &lt;- TukeyHSD(res)
+
+# For each Tukey result, filter where p adj is less than 0.05
+significant_prompts &lt;- as.data.frame(tukey$prompt) |&gt; filter(`p adj` &lt; 0.05)
+significant_adjectives &lt;- as.data.frame(tukey$adjective) |&gt; filter(`p adj` &lt; 0.05)
+significant_hearing_experience &lt;- as.data.frame(tukey$hearing_experience) |&gt; filter(`p adj` &lt; 0.05)</code>
+          </sec>
+          <sec specific-use="notebook-content">
+            <code language="r script">kable(significant_prompts)</code>
+            <table-wrap>
+              <caption>
+                <p>Tukey test between different prompts with a
+        <inline-formula><alternatives><tex-math><![CDATA[p]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>p</mml:mi></mml:math></alternatives></inline-formula>-value
+        lower 0.05.</p>
+              </caption>
+              <table>
+                <thead>
+                  <tr>
+                    <th align="left"/>
+                    <th align="right">diff</th>
+                    <th align="right">lwr</th>
+                    <th align="right">upr</th>
+                    <th align="right">p adj</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td align="left">sour-bitter</td>
+                    <td align="right">0.1539030</td>
+                    <td align="right">0.0274663</td>
+                    <td align="right">0.2803397</td>
+                    <td align="right">0.0095792</td>
+                  </tr>
+                  <tr>
+                    <td align="left">sour-salty</td>
+                    <td align="right">0.1942878</td>
+                    <td align="right">0.0661296</td>
+                    <td align="right">0.3224460</td>
+                    <td align="right">0.0005747</td>
+                  </tr>
+                  <tr>
+                    <td align="left">sweet-sour</td>
+                    <td align="right">-0.1932957</td>
+                    <td align="right">-0.3214540</td>
+                    <td align="right">-0.0651375</td>
+                    <td align="right">0.0006229</td>
+                  </tr>
+                </tbody>
+              </table>
+            </table-wrap>
+          </sec>
+          <sec specific-use="notebook-content">
+            <code language="r script">kable(significant_adjectives)</code>
+            <table-wrap>
+              <caption>
+                <p>Tukey test between different adjectives with a
+        <inline-formula><alternatives><tex-math><![CDATA[p]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>p</mml:mi></mml:math></alternatives></inline-formula>-value
+        lower 0.05.</p>
+              </caption>
+              <table>
+                <thead>
+                  <tr>
+                    <th align="left"/>
+                    <th align="right">diff</th>
+                    <th align="right">lwr</th>
+                    <th align="right">upr</th>
+                    <th align="right">p adj</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td align="left">bitter-anger</td>
+                    <td align="right">0.4204204</td>
+                    <td align="right">0.1439129</td>
+                    <td align="right">0.6969280</td>
+                    <td align="right">0.0000443</td>
+                  </tr>
+                  <tr>
+                    <td align="left">cold-anger</td>
+                    <td align="right">0.4774775</td>
+                    <td align="right">0.2009699</td>
+                    <td align="right">0.7539850</td>
+                    <td align="right">0.0000012</td>
+                  </tr>
+                  <tr>
+                    <td align="left">hot-anger</td>
+                    <td align="right">0.5315315</td>
+                    <td align="right">0.2550240</td>
+                    <td align="right">0.8080391</td>
+                    <td align="right">0.0000000</td>
+                  </tr>
+                  <tr>
+                    <td align="left">sad-anger</td>
+                    <td align="right">0.5765766</td>
+                    <td align="right">0.3000690</td>
+                    <td align="right">0.8530841</td>
+                    <td align="right">0.0000000</td>
+                  </tr>
+                  <tr>
+                    <td align="left">sweet-anger</td>
+                    <td align="right">0.3723724</td>
+                    <td align="right">0.0958648</td>
+                    <td align="right">0.6488799</td>
+                    <td align="right">0.0006699</td>
+                  </tr>
+                  <tr>
+                    <td align="left">disgust-bitter</td>
+                    <td align="right">-0.6336336</td>
+                    <td align="right">-0.9101412</td>
+                    <td align="right">-0.3571261</td>
+                    <td align="right">0.0000000</td>
+                  </tr>
+                  <tr>
+                    <td align="left">happy-bitter</td>
+                    <td align="right">-0.3093093</td>
+                    <td align="right">-0.5858169</td>
+                    <td align="right">-0.0328018</td>
+                    <td align="right">0.0136899</td>
+                  </tr>
+                  <tr>
+                    <td align="left">surprise-bitter</td>
+                    <td align="right">-0.2852853</td>
+                    <td align="right">-0.5617928</td>
+                    <td align="right">-0.0087777</td>
+                    <td align="right">0.0360645</td>
+                  </tr>
+                  <tr>
+                    <td align="left">disgust-cold</td>
+                    <td align="right">-0.6906907</td>
+                    <td align="right">-0.9671982</td>
+                    <td align="right">-0.4141831</td>
+                    <td align="right">0.0000000</td>
+                  </tr>
+                  <tr>
+                    <td align="left">happy-cold</td>
+                    <td align="right">-0.3663664</td>
+                    <td align="right">-0.6428739</td>
+                    <td align="right">-0.0898588</td>
+                    <td align="right">0.0009180</td>
+                  </tr>
+                  <tr>
+                    <td align="left">sour-cold</td>
+                    <td align="right">-0.2852853</td>
+                    <td align="right">-0.5617928</td>
+                    <td align="right">-0.0087777</td>
+                    <td align="right">0.0360645</td>
+                  </tr>
+                  <tr>
+                    <td align="left">surprise-cold</td>
+                    <td align="right">-0.3423423</td>
+                    <td align="right">-0.6188499</td>
+                    <td align="right">-0.0658348</td>
+                    <td align="right">0.0030580</td>
+                  </tr>
+                  <tr>
+                    <td align="left">fear-disgust</td>
+                    <td align="right">0.4324324</td>
+                    <td align="right">0.1559249</td>
+                    <td align="right">0.7089400</td>
+                    <td align="right">0.0000213</td>
+                  </tr>
+                  <tr>
+                    <td align="left">happy-disgust</td>
+                    <td align="right">0.3243243</td>
+                    <td align="right">0.0478168</td>
+                    <td align="right">0.6008319</td>
+                    <td align="right">0.0070884</td>
+                  </tr>
+                  <tr>
+                    <td align="left">hot-disgust</td>
+                    <td align="right">0.7447447</td>
+                    <td align="right">0.4682372</td>
+                    <td align="right">1.0212523</td>
+                    <td align="right">0.0000000</td>
+                  </tr>
+                  <tr>
+                    <td align="left">sad-disgust</td>
+                    <td align="right">0.7897898</td>
+                    <td align="right">0.5132822</td>
+                    <td align="right">1.0662973</td>
+                    <td align="right">0.0000000</td>
+                  </tr>
+                  <tr>
+                    <td align="left">salty-disgust</td>
+                    <td align="right">0.4684685</td>
+                    <td align="right">0.1919609</td>
+                    <td align="right">0.7449760</td>
+                    <td align="right">0.0000021</td>
+                  </tr>
+                  <tr>
+                    <td align="left">sour-disgust</td>
+                    <td align="right">0.4054054</td>
+                    <td align="right">0.1288979</td>
+                    <td align="right">0.6819130</td>
+                    <td align="right">0.0001074</td>
+                  </tr>
+                  <tr>
+                    <td align="left">surprise-disgust</td>
+                    <td align="right">0.3483483</td>
+                    <td align="right">0.0718408</td>
+                    <td align="right">0.6248559</td>
+                    <td align="right">0.0022833</td>
+                  </tr>
+                  <tr>
+                    <td align="left">sweet-disgust</td>
+                    <td align="right">0.5855856</td>
+                    <td align="right">0.3090780</td>
+                    <td align="right">0.8620931</td>
+                    <td align="right">0.0000000</td>
+                  </tr>
+                  <tr>
+                    <td align="left">hot-fear</td>
+                    <td align="right">0.3123123</td>
+                    <td align="right">0.0358048</td>
+                    <td align="right">0.5888199</td>
+                    <td align="right">0.0120394</td>
+                  </tr>
+                  <tr>
+                    <td align="left">sad-fear</td>
+                    <td align="right">0.3573574</td>
+                    <td align="right">0.0808498</td>
+                    <td align="right">0.6338649</td>
+                    <td align="right">0.0014571</td>
+                  </tr>
+                  <tr>
+                    <td align="left">hot-happy</td>
+                    <td align="right">0.4204204</td>
+                    <td align="right">0.1439129</td>
+                    <td align="right">0.6969280</td>
+                    <td align="right">0.0000443</td>
+                  </tr>
+                  <tr>
+                    <td align="left">sad-happy</td>
+                    <td align="right">0.4654655</td>
+                    <td align="right">0.1889579</td>
+                    <td align="right">0.7419730</td>
+                    <td align="right">0.0000026</td>
+                  </tr>
+                  <tr>
+                    <td align="left">sour-hot</td>
+                    <td align="right">-0.3393393</td>
+                    <td align="right">-0.6158469</td>
+                    <td align="right">-0.0628318</td>
+                    <td align="right">0.0035312</td>
+                  </tr>
+                  <tr>
+                    <td align="left">surprise-hot</td>
+                    <td align="right">-0.3963964</td>
+                    <td align="right">-0.6729040</td>
+                    <td align="right">-0.1198888</td>
+                    <td align="right">0.0001798</td>
+                  </tr>
+                  <tr>
+                    <td align="left">salty-sad</td>
+                    <td align="right">-0.3213213</td>
+                    <td align="right">-0.5978289</td>
+                    <td align="right">-0.0448138</td>
+                    <td align="right">0.0081111</td>
+                  </tr>
+                  <tr>
+                    <td align="left">sour-sad</td>
+                    <td align="right">-0.3843844</td>
+                    <td align="right">-0.6608919</td>
+                    <td align="right">-0.1078768</td>
+                    <td align="right">0.0003509</td>
+                  </tr>
+                  <tr>
+                    <td align="left">surprise-sad</td>
+                    <td align="right">-0.4414414</td>
+                    <td align="right">-0.7179490</td>
+                    <td align="right">-0.1649339</td>
+                    <td align="right">0.0000122</td>
+                  </tr>
+                </tbody>
+              </table>
+            </table-wrap>
+          </sec>
+          <sec specific-use="notebook-content">
+            <code language="r script">kable(significant_hearing_experience)</code>
+            <table-wrap>
+              <caption>
+                <p>Tukey test between different hearing experience groups with a
+        <inline-formula><alternatives><tex-math><![CDATA[p]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>p</mml:mi></mml:math></alternatives></inline-formula>-value
+        lower 0.05.</p>
+              </caption>
+              <table>
+                <colgroup>
+                  <col width="36%"/>
+                  <col width="16%"/>
+                  <col width="16%"/>
+                  <col width="16%"/>
+                  <col width="15%"/>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th align="left"/>
+                    <th align="right">diff</th>
+                    <th align="right">lwr</th>
+                    <th align="right">upr</th>
+                    <th align="right">p adj</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td align="left">Amateur-Professional</td>
+                    <td align="right">0.2268160</td>
+                    <td align="right">0.1318865</td>
+                    <td align="right">0.3217454</td>
+                    <td align="right">0.0000001</td>
+                  </tr>
+                  <tr>
+                    <td align="left">Not-experienced-Amateur</td>
+                    <td align="right">-0.1684003</td>
+                    <td align="right">-0.2698267</td>
+                    <td align="right">-0.0669739</td>
+                    <td align="right">0.0002967</td>
+                  </tr>
+                </tbody>
+              </table>
+            </table-wrap>
+          </sec>
+          <p>These significant comparisons illuminate the subtleties in
+    participants’ responses to different stimuli. Certain
+    prompt-adjective combinations elicited stronger emotional reactions
+    than others, indicating that the interaction between prompts and
+    adjectives significantly shapes participants’ perceptions. Notably,
+    some combinations yielded adjusted <inline-formula><alternatives><tex-math><![CDATA[p]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>p</mml:mi></mml:math></alternatives></inline-formula>-values
+    below the conventional threshold of <inline-formula><alternatives><tex-math><![CDATA[0.05]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mn>0.05</mml:mn></mml:math></alternatives></inline-formula>,
+    signifying statistically significant differences. This finding
+    reinforces the ANOVA results, confirming that the presentation of
+    prompts and adjectives can meaningfully impact emotional
+    responses.</p>
+        </sec>
+        <sec id="interaction-between-prompt-and-adjective-nb-article">
+          <title>Interaction between <italic>prompt</italic> and
+    <italic>adjective</italic></title>
+          <p>The ANOVA analysis evidenced also a significant interaction
+    between prompt and adjectives used to evaluate the sounds, as we
+    know, the design of the experiment fixed the prompt before
+    generating the audio files, therefore adjectives has to be intended
+    as dependent variables while the prompts are independent; in other
+    words, participants assigned different values to the adjectives to
+    the sounds on the basis of their generation prompt. This interaction
+    can be seen in
+    <xref alt="Figure 6" rid="fig-heatmap-nb-article">Figure 6</xref>. In
+    particular <xref alt="Figure 6 (a)" rid="fig-heatmap-taste-nb-article">Figure 6
+    (a)</xref> shows the mean value assigned to each taste adjective by
+    their prompt, we can clearly seen the major diagonal emerge by the
+    <inline-formula><alternatives><tex-math><![CDATA[4 \times 4]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mn>4</mml:mn><mml:mo>×</mml:mo><mml:mn>4</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>
+    matrix, this means that, the mean value assigned to the adjective
+    that matches the prompt of each sound is the highest. The rest of
+    the interaction between adjectives and prompt can be seen in
+    <xref alt="Figure 6 (b)" rid="fig-heatmap-emotions-nb-article">Figure 6
+    (b)</xref> , a deeper analysis of emotional aspect assigned to the
+    sounds is presented in the next section.</p>
+          <fig id="fig-heatmap-nb-article">
+            <caption>
+              <p>Figure 6: Heatmaps</p>
+            </caption>
+            <table-wrap>
+              <table>
+                <colgroup>
+                  <col width="50%"/>
+                  <col width="50%"/>
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td align="left">
+                      <p specific-use="wrapper">
+                        <boxed-text>
+                          <fig id="fig-heatmap-taste-nb-article">
+                            <caption>
+                              <p>(a) Heatmap of perceived taste in
+                    correspondence of the intended one.</p>
+                            </caption>
+                            <boxed-text>
+                              <code language="r script">library(reshape2)</code>
+                              <boxed-text>
+                                <preformat>
+Caricamento pacchetto: 'reshape2'</preformat>
+                              </boxed-text>
+                              <boxed-text>
+                                <preformat>Il seguente oggetto è mascherato da 'package:tidyr':
+
+    smiths</preformat>
+                              </boxed-text>
+                              <code language="r script"># Calcolo della media per ciascun prompt
+heatmap_data &lt;- data_task2 |&gt;
+  group_by(prompt) |&gt;
+  summarise(
+    sour = mean(sour, na.rm = TRUE),
+    sweet = mean(sweet, na.rm = TRUE),
+    bitter = mean(bitter, na.rm = TRUE),
+    salty = mean(salty, na.rm = TRUE)
+  )
+
+# Riorganizzazione per la heatmap
+heatmap_matrix &lt;- heatmap_data |&gt;
+  pivot_longer(cols = -prompt, names_to = "adjective", values_to = "mean_value") |&gt;
+  pivot_wider(names_from = adjective, values_from = mean_value) |&gt;
+  column_to_rownames("prompt") |&gt;
+  as.matrix()
+
+axis_order &lt;- c("bitter", "salty", "sour", "sweet")
+
+# Creazione della heatmap con ggplot2
+heatmap_plot &lt;- heatmap_data |&gt;
+  pivot_longer(cols = -prompt, names_to = "adjective", values_to = "mean_value") |&gt;
+  mutate(
+    prompt = factor(prompt, levels = rev(axis_order)),
+    adjective = factor(adjective, levels = axis_order)
+  ) |&gt;
+  ggplot(aes(x = adjective, y = prompt, fill = mean_value)) +
+  geom_tile() +
+  geom_text(aes(label = round(mean_value, 2)), color = "black", size = 4) +
+  scale_fill_gradient(low = "white", high = "blue") +
+  labs(
+    x = "Adjective",
+    y = "Prompt",
+    fill = "Mean value"
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+# Mostrare il grafico
+print(heatmap_plot)</code>
+                              <boxed-text>
+                                <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-19-1.png"/>
+                              </boxed-text>
+                            </boxed-text>
+                          </fig>
+                        </boxed-text>
+                      </p>
+                    </td>
+                    <td align="left">
+                      <p specific-use="wrapper">
+                        <boxed-text>
+                          <fig id="fig-heatmap-emotions-nb-article">
+                            <caption>
+                              <p>(b) Heatmap of perceived emotional
+                    response in correspondence of the suggested
+                    taste.</p>
+                            </caption>
+                            <boxed-text>
+                              <code language="r script"># Calcolo della media per ciascun prompt
+heatmap_data &lt;- data_task2 |&gt;
+  group_by(prompt) |&gt;
+  summarise(
+    happy = mean(happy, na.rm = TRUE),
+    sad = mean(sad, na.rm = TRUE),
+    anger = mean(anger, na.rm = TRUE),
+    disgust = mean(disgust, na.rm = TRUE),
+    fear = mean(fear, na.rm = TRUE),
+    surprise = mean(surprise, na.rm = TRUE),
+    hot = mean(hot, na.rm = TRUE),
+    cold = mean(cold, na.rm = TRUE)
+  )
+
+# Riorganizzazione per la heatmap
+heatmap_matrix &lt;- heatmap_data |&gt;
+  pivot_longer(cols = -prompt, names_to = "adjective", values_to = "mean_value") |&gt;
+  pivot_wider(names_from = adjective, values_from = mean_value) |&gt;
+  column_to_rownames("prompt") |&gt;
+  as.matrix()
+
+# Definire l'ordine degli assi
+axis_order &lt;- c("sad", "anger", "disgust", "fear", "surprise", "happy", "hot", "cold")
+
+# Creazione della heatmap con ggplot2
+heatmap_plot &lt;- heatmap_data |&gt;
+  pivot_longer(cols = -prompt, names_to = "adjective", values_to = "mean_value") |&gt;
+  mutate(
+    prompt = factor(prompt, levels = rev(unique(prompt))),
+    adjective = factor(adjective, levels = axis_order)
+  ) |&gt;
+  ggplot(aes(x = adjective, y = prompt, fill = mean_value)) +
+  geom_tile() +
+  geom_text(aes(label = round(mean_value, 2)), color = "black", size = 4) +
+  scale_fill_gradient(low = "white", high = "blue") +
+  labs(
+    x = "Adjective",
+    y = "Prompt",
+    fill = "Mean Value"
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+# Mostrare il grafico
+print(heatmap_plot)</code>
+                              <boxed-text>
+                                <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-20-1.png"/>
+                              </boxed-text>
+                            </boxed-text>
+                          </fig>
+                        </boxed-text>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </table-wrap>
+          </fig>
+        </sec>
+        <sec id="factorial-analysis-nb-article">
+          <title>Factorial analysis</title>
+          <sec specific-use="notebook-content">
+            <code language="r script"># Standardize the data excluding the 'taste' column
+data &lt;- data_task2 |&gt; select(-prompt)</code>
+          </sec>
+          <p>To explore the underlying relationships between sensory qualities
+    and emotional states, we conducted a factor analysis on the
+    standardized data, excluding the ‘taste’ column. The initial step
+    involved calculating the correlation matrix, which revealed notable
+    relationships among the adjectives. Specifically, we observed that
+    negative emotions were positively correlated, while the pair
+    happy-sad exhibited a negative correlation. Furthermore, sweetness
+    demonstrated a strong correlation with happiness and warmth, whereas
+    bitterness was associated with anger and fear. Sourness, on the
+    other hand, was evidently correlated with disgust and fear. Other
+    variables did not show strong correlations at first glance,
+    prompting us to proceed with the factor analysis.</p>
+          <sec id="cell-fig-corr-matrix-nb-article" specific-use="notebook-content">
+            <code language="r script">library("ggcorrplot")
+
+cor_matrix &lt;- cor(data)
+
+ggcorrplot(cor_matrix,
+           lab = TRUE,
+           lab_size = 2.9,
+           type="lower")</code>
+            <fig id="fig-corr-matrix-nb-article">
+              <caption>
+                <p>Figure 7: Correlation matrix</p>
+              </caption>
+              <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/fig-corr-matrix-1.png"/>
+            </fig>
+          </sec>
+          <p>The correlation matrix is illustrated in
+    <xref alt="Figure 7" rid="fig-corr-matrix-nb-article">Figure 7</xref>,
+    showcasing these relationships clearly.</p>
+          <sec id="cell-fig-scree-plots-nb-article" specific-use="notebook-content">
+            <code language="r script"># Perform factor analysis
+# We'll start by estimating the number of factors, then perform the analysis
+fa_parallel &lt;- fa.parallel(data, fm = "ml", fa = "fa", main="")</code>
+            <boxed-text>
+              <preformat>Parallel analysis suggests that the number of factors =  4  and the number of components =  NA </preformat>
+            </boxed-text>
+            <code language="r script">num_factors &lt;- fa_parallel$nfact # Optimal number of factors from parallel analysis</code>
+            <fig id="fig-scree-plots-nb-article">
+              <caption>
+                <p>Figure 8: Parallel Analysis Scree Plots</p>
+              </caption>
+              <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/fig-scree-plots-1.png"/>
+            </fig>
+          </sec>
+          <p>To determine the optimal number of factors for our analysis, we
+    employed parallel analysis, which indicated an optimal number of 4
+    factors. This estimation serves as a foundation for our subsequent
+    factor analysis. Following this, we executed the factor analysis
+    using the identified number of factors, applying an oblique rotation
+    (oblimin) to allow for potential correlations among the factors. The
+    results of the factor analysis, including the factor loadings, are
+    presented in the output. The factor loadings indicate how strongly
+    each variable contributes to the identified factors, providing
+    insights into the underlying structure of the data.</p>
+          <sec id="cell-fig-factor-analysis-nb-article" specific-use="notebook-content">
+            <code language="r script"># Run the factor analysis with the identified number of factors
+factor_analysis &lt;- fa(data, nfactors = num_factors, rotate = "oblimin", fm = "ml", scores=TRUE)</code>
+            <boxed-text>
+              <preformat>Caricamento dei namespace richiesti: GPArotation</preformat>
+            </boxed-text>
+            <code language="r script">fa.diagram(factor_analysis, main="")</code>
+            <fig id="fig-factor-analysis-nb-article">
+              <caption>
+                <p>Figure 9: Factor analysis graph.</p>
+              </caption>
+              <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/fig-factor-analysis-1.png"/>
+            </fig>
+          </sec>
+          <sec specific-use="notebook-content">
+            <code language="r script"># Display factor loadings
+print(factor_analysis$loadings)</code>
+            <boxed-text>
+              <preformat>
+Loadings:
+         ML3    ML1    ML2    ML4   
+salty           -0.231  0.111  0.535
+sweet            0.992              
+bitter    0.502                     
+sour      0.385 -0.128  0.178  0.226
+happy    -0.197  0.302 -0.132  0.492
+sad       0.292  0.259  0.236       
+anger     0.779                     
+disgust   0.694               -0.133
+fear      0.662         0.133  0.113
+surprise                0.120  0.526
+hot       0.140  0.361 -0.458  0.267
+cold                    0.882       
+
+                 ML3   ML1   ML2   ML4
+SS loadings    2.083 1.360 1.146 0.971
+Proportion Var 0.174 0.113 0.096 0.081
+Cumulative Var 0.174 0.287 0.382 0.463</preformat>
+            </boxed-text>
+          </sec>
+          <p>To visualize the relationships among the factors, we generated
+    biplots for various factor combinations. The biplots, shown in the
+    subsequent figures, illustrate the distribution of variables across
+    the identified factors, highlighting the clustering of adjectives
+    associated with similar emotional states.</p>
+          <fig id="fig-fa-biplot-nb-article">
+            <caption>
+              <p>Figure 10: Loadings biplot over the four
+      factors.</p>
+            </caption>
+            <table-wrap>
+              <table>
+                <colgroup>
+                  <col width="50%"/>
+                  <col width="50%"/>
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td align="left">
+                      <p specific-use="wrapper">
+                        <boxed-text>
+                          <fig id="fig-fa-biplot-1-nb-article">
+                            <caption>
+                              <p>(a)</p>
+                            </caption>
+                            <boxed-text>
+                              <code language="r script">biplot.psych(
+  factor_analysis,
+  choose=c(1,2),
+  smoother = TRUE,
+  main = NULL,
+  )</code>
+                              <boxed-text>
+                                <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-26-1.png"/>
+                              </boxed-text>
+                            </boxed-text>
+                          </fig>
+                        </boxed-text>
+                      </p>
+                    </td>
+                    <td align="left">
+                      <p specific-use="wrapper">
+                        <boxed-text>
+                          <fig id="fig-fa-biplot-2-nb-article">
+                            <caption>
+                              <p>(b)</p>
+                            </caption>
+                            <boxed-text>
+                              <code language="r script">biplot.psych(
+  factor_analysis,
+  choose=c(3,4),
+  main = NULL,
+  smoother = TRUE)</code>
+                              <boxed-text>
+                                <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-27-1.png"/>
+                              </boxed-text>
+                            </boxed-text>
+                          </fig>
+                        </boxed-text>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </table-wrap>
+            <table-wrap>
+              <table>
+                <colgroup>
+                  <col width="50%"/>
+                  <col width="50%"/>
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td align="left">
+                      <p specific-use="wrapper">
+                        <boxed-text>
+                          <fig id="fig-fa-biplot-3-nb-article">
+                            <caption>
+                              <p>(c)</p>
+                            </caption>
+                            <boxed-text>
+                              <code language="r script">biplot(
+  factor_analysis,
+  choose=c(1,3),
+  main = NULL,
+  smoother=TRUE
+)</code>
+                              <boxed-text>
+                                <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-28-1.png"/>
+                              </boxed-text>
+                            </boxed-text>
+                          </fig>
+                        </boxed-text>
+                      </p>
+                    </td>
+                    <td align="left">
+                      <p specific-use="wrapper">
+                        <boxed-text>
+                          <fig id="fig-fa-biplot-4-nb-article">
+                            <caption>
+                              <p>(d)</p>
+                            </caption>
+                            <boxed-text>
+                              <code language="r script">biplot(
+  factor_analysis,
+  main = NULL,
+  smoother = TRUE,
+  choose=c(1,4),
+)</code>
+                              <boxed-text>
+                                <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-29-1.png"/>
+                              </boxed-text>
+                            </boxed-text>
+                          </fig>
+                        </boxed-text>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </table-wrap>
+          </fig>
+          <sec specific-use="notebook-content">
+            <code language="r script">library(dplyr)
+library(knitr)
+library(kableExtra)</code>
+            <boxed-text>
+              <preformat>
+Caricamento pacchetto: 'kableExtra'</preformat>
+            </boxed-text>
+            <boxed-text>
+              <preformat>Il seguente oggetto è mascherato da 'package:dplyr':
+
+    group_rows</preformat>
+            </boxed-text>
+            <code language="r script"># Creiamo un dataframe con gli scores e il prompt
+scores_df &lt;- cbind(data_task2["prompt"], as.data.frame(factor_analysis$scores))
+
+# Rinominare le colonne dei fattori se necessario
+colnames(scores_df)[2:5] &lt;- paste0("Factor", 1:4)
+
+# Calcoliamo la media e la deviazione standard per ogni fattore, raggruppati per prompt
+summary_table &lt;- scores_df |&gt;
+  group_by(prompt) |&gt;
+  summarise(across(starts_with("Factor"),
+                   list(mu = mean, sigma = sd),
+                   .names = "{.col}_{.fn}"))
+
+# Riorganizziamo i dati in un formato tabellare con le coppie (mu, sigma)
+summary_table_formatted &lt;- summary_table |&gt;
+  mutate(across(contains("_mu"),
+                ~ sprintf("$\\mu=%.2f$, $\\sigma=%.2f<!-- (F2ED4C6E)[nb-article]:/home/matteo/Scrivania/Projects/csc/soundfood/multimodal-symphony-survey-analysis/index.qmd -->quot;, .x, get(sub("_mu", "_sigma", cur_column())))))
+
+# Selezioniamo solo le colonne formattate
+summary_table_kable &lt;- summary_table_formatted |&gt;
+  select(prompt, contains("_mu"))
+
+# Rinominiamo le colonne per renderle più leggibili
+colnames(summary_table_kable) &lt;- c("Prompt", paste0("Fattore ", 1:4))
+
+# Creiamo la tabella con kableExtra
+kable(summary_table_kable)</code>
+            <table-wrap>
+              <table>
+                <colgroup>
+                  <col width="6%"/>
+                  <col width="23%"/>
+                  <col width="23%"/>
+                  <col width="23%"/>
+                  <col width="23%"/>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th align="left">Prompt</th>
+                    <th align="left">Fattore 1</th>
+                    <th align="left">Fattore 2</th>
+                    <th align="left">Fattore 3</th>
+                    <th align="left">Fattore 4</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td align="left">bitter</td>
+                    <td align="left"><inline-formula><alternatives><tex-math><![CDATA[\mu=-0.01]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mi>−</mml:mi><mml:mn>0.01</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+            <inline-formula><alternatives><tex-math><![CDATA[\sigma=0.82]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>σ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.82</mml:mn></mml:mrow></mml:math></alternatives></inline-formula></td>
+                    <td align="left"><inline-formula><alternatives><tex-math><![CDATA[\mu=-0.06]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mi>−</mml:mi><mml:mn>0.06</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+            <inline-formula><alternatives><tex-math><![CDATA[\sigma=0.99]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>σ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.99</mml:mn></mml:mrow></mml:math></alternatives></inline-formula></td>
+                    <td align="left"><inline-formula><alternatives><tex-math><![CDATA[\mu=0.04]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.04</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+            <inline-formula><alternatives><tex-math><![CDATA[\sigma=0.91]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>σ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.91</mml:mn></mml:mrow></mml:math></alternatives></inline-formula></td>
+                    <td align="left"><inline-formula><alternatives><tex-math><![CDATA[\mu=-0.16]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mi>−</mml:mi><mml:mn>0.16</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+            <inline-formula><alternatives><tex-math><![CDATA[\sigma=0.69]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>σ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.69</mml:mn></mml:mrow></mml:math></alternatives></inline-formula></td>
+                  </tr>
+                  <tr>
+                    <td align="left">salty</td>
+                    <td align="left"><inline-formula><alternatives><tex-math><![CDATA[\mu=-0.13]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mi>−</mml:mi><mml:mn>0.13</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+            <inline-formula><alternatives><tex-math><![CDATA[\sigma=0.87]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>σ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.87</mml:mn></mml:mrow></mml:math></alternatives></inline-formula></td>
+                    <td align="left"><inline-formula><alternatives><tex-math><![CDATA[\mu=-0.03]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mi>−</mml:mi><mml:mn>0.03</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+            <inline-formula><alternatives><tex-math><![CDATA[\sigma=0.98]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>σ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.98</mml:mn></mml:mrow></mml:math></alternatives></inline-formula></td>
+                    <td align="left"><inline-formula><alternatives><tex-math><![CDATA[\mu=0.01]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.01</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+            <inline-formula><alternatives><tex-math><![CDATA[\sigma=0.94]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>σ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.94</mml:mn></mml:mrow></mml:math></alternatives></inline-formula></td>
+                    <td align="left"><inline-formula><alternatives><tex-math><![CDATA[\mu=0.02]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.02</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+            <inline-formula><alternatives><tex-math><![CDATA[\sigma=0.94]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>σ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.94</mml:mn></mml:mrow></mml:math></alternatives></inline-formula></td>
+                  </tr>
+                  <tr>
+                    <td align="left">sour</td>
+                    <td align="left"><inline-formula><alternatives><tex-math><![CDATA[\mu=0.50]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.50</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+            <inline-formula><alternatives><tex-math><![CDATA[\sigma=1.02]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>σ</mml:mi><mml:mo>=</mml:mo><mml:mn>1.02</mml:mn></mml:mrow></mml:math></alternatives></inline-formula></td>
+                    <td align="left"><inline-formula><alternatives><tex-math><![CDATA[\mu=-0.39]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mi>−</mml:mi><mml:mn>0.39</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+            <inline-formula><alternatives><tex-math><![CDATA[\sigma=0.79]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>σ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.79</mml:mn></mml:mrow></mml:math></alternatives></inline-formula></td>
+                    <td align="left"><inline-formula><alternatives><tex-math><![CDATA[\mu=0.23]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.23</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+            <inline-formula><alternatives><tex-math><![CDATA[\sigma=0.93]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>σ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.93</mml:mn></mml:mrow></mml:math></alternatives></inline-formula></td>
+                    <td align="left"><inline-formula><alternatives><tex-math><![CDATA[\mu=0.11]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.11</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+            <inline-formula><alternatives><tex-math><![CDATA[\sigma=0.74]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>σ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.74</mml:mn></mml:mrow></mml:math></alternatives></inline-formula></td>
+                  </tr>
+                  <tr>
+                    <td align="left">sweet</td>
+                    <td align="left"><inline-formula><alternatives><tex-math><![CDATA[\mu=-0.30]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mi>−</mml:mi><mml:mn>0.30</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+            <inline-formula><alternatives><tex-math><![CDATA[\sigma=0.74]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>σ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.74</mml:mn></mml:mrow></mml:math></alternatives></inline-formula></td>
+                    <td align="left"><inline-formula><alternatives><tex-math><![CDATA[\mu=0.43]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.43</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+            <inline-formula><alternatives><tex-math><![CDATA[\sigma=1.04]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>σ</mml:mi><mml:mo>=</mml:mo><mml:mn>1.04</mml:mn></mml:mrow></mml:math></alternatives></inline-formula></td>
+                    <td align="left"><inline-formula><alternatives><tex-math><![CDATA[\mu=-0.26]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mi>−</mml:mi><mml:mn>0.26</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+            <inline-formula><alternatives><tex-math><![CDATA[\sigma=0.82]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>σ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.82</mml:mn></mml:mrow></mml:math></alternatives></inline-formula></td>
+                    <td align="left"><inline-formula><alternatives><tex-math><![CDATA[\mu=0.05]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>μ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.05</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+            <inline-formula><alternatives><tex-math><![CDATA[\sigma=0.80]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>σ</mml:mi><mml:mo>=</mml:mo><mml:mn>0.80</mml:mn></mml:mrow></mml:math></alternatives></inline-formula></td>
+                  </tr>
+                </tbody>
+              </table>
+            </table-wrap>
+          </sec>
+          <p>Lastly, we performed a multi-factor analysis to further explore
+    the dimensions of negativity and positivity within the data. The
+    results of this analysis are depicted in the multi-factor diagram,
+    which categorizes the factors into two overarching themes:
+    Negativity and Positivity.</p>
+          <fig id="fig-multilevel-fa-nb-article">
+            <caption>
+              <p>Figure 11: Hierarchical (multilevel) factors’
+      structure.</p>
+            </caption>
+            <sec specific-use="notebook-content">
+              <code language="r script">fam &lt;- fa.multi(data, nfact2=2, nfactors=4)
+fa.multi.diagram(fam, f2labels = c("Negativity", "Positivity"), main="")</code>
+              <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-31-1.png"/>
+            </sec>
+          </fig>
+        </sec>
+      </sec>
+    </body>
+    <back>
+      <ref-list>
+        <title>References</title>
+        <ref id="ref-stoet_psytoolkit_2017-nb-article">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Stoet</surname>
+                <given-names>Gijsbert</given-names>
+              </name>
+            </person-group>
+            <article-title>PsyToolkit: A novel web-based method for running online questionnaires and reaction-time experiments</article-title>
+            <source>Teaching of Psychology</source>
+            <year iso-8601-date="2017">2017</year>
+            <volume>44</volume>
+            <issue>1</issue>
+            <uri>https://doi.org/10.1177/0098628316677643</uri>
+            <pub-id pub-id-type="doi">10.1177/0098628316677643</pub-id>
+            <fpage>24</fpage>
+            <lpage>31</lpage>
+          </element-citation>
+        </ref>
+        <ref id="ref-copet2024simplecontrollablemusicgeneration-nb-article">
+          <element-citation publication-type="paper-conference">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Copet</surname>
+                <given-names>Jade</given-names>
+              </name>
+              <name>
+                <surname>Kreuk</surname>
+                <given-names>Felix</given-names>
+              </name>
+              <name>
+                <surname>Gat</surname>
+                <given-names>Itai</given-names>
+              </name>
+              <name>
+                <surname>Remez</surname>
+                <given-names>Tal</given-names>
+              </name>
+              <name>
+                <surname>Kant</surname>
+                <given-names>David</given-names>
+              </name>
+              <name>
+                <surname>Synnaeve</surname>
+                <given-names>Gabriel</given-names>
+              </name>
+              <name>
+                <surname>Adi</surname>
+                <given-names>Yossi</given-names>
+              </name>
+              <name>
+                <surname>Défossez</surname>
+                <given-names>Alexandre</given-names>
+              </name>
+            </person-group>
+            <article-title>Simple and controllable music generation</article-title>
+            <source>Proceedings of the 37th international conference on neural information processing systems</source>
+            <publisher-name>Curran Associates Inc.</publisher-name>
+            <publisher-loc>Red Hook, NY, USA</publisher-loc>
+            <year iso-8601-date="2023">2023</year>
+          </element-citation>
+        </ref>
+        <ref id="ref-lix_1996_presence_of_variance-nb-article">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Lix</surname>
+                <given-names>Lisa M.</given-names>
+              </name>
+              <name>
+                <surname>Keselman</surname>
+                <given-names>Joanne C.</given-names>
+              </name>
+              <name>
+                <surname>Keselman</surname>
+                <given-names>H. J.</given-names>
+              </name>
+            </person-group>
+            <article-title>Consequences of assumption violations revisited: A quantitative review of alternatives to the one-way analysis of variance "f" test</article-title>
+            <source>Review of Educational Research</source>
+            <publisher-name>[Sage Publications, Inc., American Educational Research Association]</publisher-name>
+            <year iso-8601-date="1996">1996</year>
+            <date-in-citation content-type="access-date">
+              <year iso-8601-date="2025-01-21">2025</year>
+              <month>01</month>
+              <day>21</day>
+            </date-in-citation>
+            <volume>66</volume>
+            <issue>4</issue>
+            <issn>00346543, 19351046</issn>
+            <uri>http://www.jstor.org/stable/1170654</uri>
+            <fpage>579</fpage>
+            <lpage>619</lpage>
+          </element-citation>
+        </ref>
+        <ref id="ref-harwell_1992_meta-analytic_methods-nb-article">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Harwell</surname>
+                <given-names>Michael R.</given-names>
+              </name>
+              <name>
+                <surname>Rubinstein</surname>
+                <given-names>Elaine N.</given-names>
+              </name>
+              <name>
+                <surname>Hayes</surname>
+                <given-names>William S.</given-names>
+              </name>
+              <name>
+                <surname>Olds</surname>
+                <given-names>Corley C.</given-names>
+              </name>
+            </person-group>
+            <article-title>Summarizing monte carlo results in methodological research: The one- and two-factor fixed effects ANOVA cases</article-title>
+            <source>Journal of Educational Statistics</source>
+            <publisher-name>[Sage Publications, Inc., American Educational Research Association, American Statistical Association]</publisher-name>
+            <year iso-8601-date="1992">1992</year>
+            <date-in-citation content-type="access-date">
+              <year iso-8601-date="2025-01-21">2025</year>
+              <month>01</month>
+              <day>21</day>
+            </date-in-citation>
+            <volume>17</volume>
+            <issue>4</issue>
+            <issn>03629791</issn>
+            <uri>http://www.jstor.org/stable/1165127</uri>
+            <fpage>315</fpage>
+            <lpage>339</lpage>
+          </element-citation>
+        </ref>
+        <ref id="ref-glass_1972_consequences_of_failure-nb-article">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Glass</surname>
+                <given-names>Gene V</given-names>
+              </name>
+              <name>
+                <surname>Peckham</surname>
+                <given-names>Percy D.</given-names>
+              </name>
+              <name>
+                <surname>Sanders</surname>
+                <given-names>James R.</given-names>
+              </name>
+            </person-group>
+            <article-title>Consequences of failure to meet assumptions underlying the fixed effects analyses of variance and covariance</article-title>
+            <source>Review of Educational Research</source>
+            <year iso-8601-date="1972">1972</year>
+            <volume>42</volume>
+            <issue>3</issue>
+            <uri>https://doi.org/10.3102/00346543042003237</uri>
+            <pub-id pub-id-type="doi">10.3102/00346543042003237</pub-id>
+            <fpage>237</fpage>
+            <lpage>288</lpage>
+          </element-citation>
+        </ref>
+      </ref-list>
+      <fn-group>
+        <fn id="fn1-nb-article">
+          <label>1</label>
+          <p>A full description of the model and its
+    finetuning process is available at the publication related to this
+    analysis.</p>
+        </fn>
+        <fn id="fn2-nb-article">
+          <label>2</label>
+          <p>The Bonferroni correction has not been applied
+    due to the non indepenent nature of the test, in fact the test has
+    been performed after the results of the previous Wilcoxon test,
+    which, instead, was testing independently 4 groups.</p>
+        </fn>
+      </fn-group>
+    </back>
+  </sub-article>
+  <sub-article article-type="notebook" id="nb-2-nb-1">
+    <front-stub>
+</front-stub>
+    <body>
+      <sec id="contributor-covenant-code-of-conduct-nb-1">
+        <title>Contributor Covenant Code of Conduct</title>
+        <sec id="our-pledge-nb-1">
+          <title>Our Pledge</title>
+          <p>We as members, contributors, and leaders pledge to make
+    participation in our community a harassment-free experience for
+    everyone, regardless of age, body size, visible or invisible
+    disability, ethnicity, sex characteristics, gender identity and
+    expression, level of experience, education, socio-economic status,
+    nationality, personal appearance, race, religion, or sexual identity
+    and orientation.</p>
+          <p>We pledge to act and interact in ways that contribute to an open,
+    welcoming, diverse, inclusive, and healthy community.</p>
+        </sec>
+        <sec id="our-standards-nb-1">
+          <title>Our Standards</title>
+          <p>Examples of behavior that contributes to a positive environment
+    for our community include:</p>
+          <list list-type="bullet">
+            <list-item>
+              <p>Demonstrating empathy and kindness toward other people</p>
+            </list-item>
+            <list-item>
+              <p>Being respectful of differing opinions, viewpoints, and
+        experiences</p>
+            </list-item>
+            <list-item>
+              <p>Giving and gracefully accepting constructive feedback</p>
+            </list-item>
+            <list-item>
+              <p>Accepting responsibility and apologizing to those affected by
+        our mistakes, and learning from the experience</p>
+            </list-item>
+            <list-item>
+              <p>Focusing on what is best not just for us as individuals, but
+        for the overall community</p>
+            </list-item>
+          </list>
+          <p>Examples of unacceptable behavior include:</p>
+          <list list-type="bullet">
+            <list-item>
+              <p>The use of sexualized language or imagery, and sexual
+        attention or advances of any kind</p>
+            </list-item>
+            <list-item>
+              <p>Trolling, insulting or derogatory comments, and personal or
+        political attacks</p>
+            </list-item>
+            <list-item>
+              <p>Public or private harassment</p>
+            </list-item>
+            <list-item>
+              <p>Publishing others’ private information, such as a physical or
+        email address, without their explicit permission</p>
+            </list-item>
+            <list-item>
+              <p>Other conduct which could reasonably be considered
+        inappropriate in a professional setting</p>
+            </list-item>
+          </list>
+        </sec>
+        <sec id="enforcement-responsibilities-nb-1">
+          <title>Enforcement Responsibilities</title>
+          <p>Community leaders are responsible for clarifying and enforcing
+    our standards of acceptable behavior and will take appropriate and
+    fair corrective action in response to any behavior that they deem
+    inappropriate, threatening, offensive, or harmful.</p>
+          <p>Community leaders have the right and responsibility to remove,
+    edit, or reject comments, commits, code, wiki edits, issues, and
+    other contributions that are not aligned to this Code of Conduct,
+    and will communicate reasons for moderation decisions when
+    appropriate.</p>
+        </sec>
+        <sec id="scope-nb-1">
+          <title>Scope</title>
+          <p>This Code of Conduct applies within all community spaces, and
+    also applies when an individual is officially representing the
+    community in public spaces. Examples of representing our community
+    include using an official e-mail address, posting via an official
+    social media account, or acting as an appointed representative at an
+    online or offline event.</p>
+        </sec>
+        <sec id="enforcement-nb-1">
+          <title>Enforcement</title>
+          <p>Instances of abusive, harassing, or otherwise unacceptable
+    behavior may be reported to the community leaders responsible for
+    enforcement at spanio@dei.unipd.it. All complaints will be reviewed
+    and investigated promptly and fairly.</p>
+          <p>All community leaders are obligated to respect the privacy and
+    security of the reporter of any incident.</p>
+        </sec>
+        <sec id="enforcement-guidelines-nb-1">
+          <title>Enforcement Guidelines</title>
+          <p>Community leaders will follow these Community Impact Guidelines
+    in determining the consequences for any action they deem in
+    violation of this Code of Conduct:</p>
+          <sec id="correction-nb-1">
+            <title>1. Correction</title>
+            <p><bold>Community Impact</bold>: Use of inappropriate language or
+      other behavior deemed unprofessional or unwelcome in the
+      community.</p>
+            <p><bold>Consequence</bold>: A private, written warning from
+      community leaders, providing clarity around the nature of the
+      violation and an explanation of why the behavior was
+      inappropriate. A public apology may be requested.</p>
+          </sec>
+          <sec id="warning-nb-1">
+            <title>2. Warning</title>
+            <p><bold>Community Impact</bold>: A violation through a single
+      incident or series of actions.</p>
+            <p><bold>Consequence</bold>: A warning with consequences for
+      continued behavior. No interaction with the people involved,
+      including unsolicited interaction with those enforcing the Code of
+      Conduct, for a specified period of time. This includes avoiding
+      interactions in community spaces as well as external channels like
+      social media. Violating these terms may lead to a temporary or
+      permanent ban.</p>
+          </sec>
+          <sec id="temporary-ban-nb-1">
+            <title>3. Temporary Ban</title>
+            <p><bold>Community Impact</bold>: A serious violation of community
+      standards, including sustained inappropriate behavior.</p>
+            <p><bold>Consequence</bold>: A temporary ban from any sort of
+      interaction or public communication with the community for a
+      specified period of time. No public or private interaction with
+      the people involved, including unsolicited interaction with those
+      enforcing the Code of Conduct, is allowed during this period.
+      Violating these terms may lead to a permanent ban.</p>
+          </sec>
+          <sec id="permanent-ban-nb-1">
+            <title>4. Permanent Ban</title>
+            <p><bold>Community Impact</bold>: Demonstrating a pattern of
+      violation of community standards, including sustained
+      inappropriate behavior, harassment of an individual, or aggression
+      toward or disparagement of classes of individuals.</p>
+            <p><bold>Consequence</bold>: A permanent ban from any sort of
+      public interaction within the community.</p>
+          </sec>
+        </sec>
+        <sec id="attribution-nb-1">
+          <title>Attribution</title>
+          <p>This Code of Conduct is adapted from the
+    <ext-link ext-link-type="uri" xlink:href="https://www.contributor-covenant.org">Contributor
+    Covenant</ext-link>, version 2.0, available at
+    https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.</p>
+          <p>Community Impact Guidelines were inspired by
+    <ext-link ext-link-type="uri" xlink:href="https://github.com/mozilla/diversity">Mozilla’s
+    code of conduct enforcement ladder</ext-link>.</p>
+          <p>For answers to common questions about this code of conduct, see
+    the FAQ at https://www.contributor-covenant.org/faq. Translations
+    are available at
+    https://www.contributor-covenant.org/translations.</p>
+        </sec>
+      </sec>
+    </body>
+    <back>
+</back>
+  </sub-article>
+</article>
