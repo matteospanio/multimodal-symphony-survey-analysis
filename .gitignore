@@ -9,3 +9,4 @@ _freeze
 site_libs
 index_files
 data/
+index_cache
