@@ -52,8 +52,8 @@ keywords:
 license: "CC BY"
 citation:
   container-title: Frontiers in Computer Science
-  volume: x
-  issue: y
+  volume: TBD
+  issue: TBD
 funding: "We thank SoundFood s.r.l. for the economic support of this research."
 bibliography: references.bib
 csl: ieee.csl
@@ -155,7 +155,7 @@ The underlying research question guiding this task was to assess if the fine tun
 
 The distribution of scores across all participants is presented in @fig-model-pref-1. The histogram and density plot show the spread of scores, allowing us to visually assess the preference for one model over the other. The base model and fine-tuned model preferences are expected to manifest as peaks around the lower and higher end of the score range, respectively.
 
-:::: {#fig-model-pref layout="[[1, 1]]"}
+:::: {#fig-model-pref layout="[[1, 1], [1]]"}
 
 ::: {#fig-model-pref-1}
 ```{r}
@@ -168,19 +168,6 @@ ggplot(data_task1, aes(x = score)) +
 
 Overall evalutation of the models.
 :::
-
-```{r}
-library(ggplot2)
-library(dplyr)
-
-# Creazione dei grafici per ciascun valore della variabile 'prompt'
-ggplot(data_task1, aes(x = score)) +
-  geom_histogram(binwidth = 1, fill = "skyblue", color = "black", alpha = 0.7) +
-  geom_density(aes(y = after_stat(count)), fill = "lightgreen", alpha = 0.4) +
-  labs(x = "Score", y = "Count") +
-  theme_minimal() +
-  facet_wrap(~ prompt, scales = "free_y")
-```
 
 ::: {#fig-model-pref-2}
 
@@ -197,13 +184,30 @@ ggplot(data_task1, aes(x = prompt, y = score, fill = prompt)) +
   theme(legend.position = "none")
 ```
 
+Score boxplot by taste category.
+:::
+
+::: {#fig-model-pref-3}
+```{r}
+# Creazione dei grafici per ciascun valore della variabile 'prompt'
+ggplot(data_task1, aes(x = score)) +
+  geom_histogram(binwidth = 1, fill = "skyblue", color = "black", alpha = 0.7) +
+  geom_density(aes(y = after_stat(count)), fill = "lightgreen", alpha = 0.4) +
+  labs(x = "Score", y = "Count") +
+  theme_minimal() +
+  facet_wrap(~ prompt, scales = "free_y")
+```
 Score distribution by taste category.
+
 :::
 
 Score distribution between the two models.
 ::::
 
 @fig-model-pref-2 goes further by breaking down the preferences based on the taste category described in the audio sample. Each taste category is visualized using boxplots, where the median score for each taste can be assessed. This enables us to examine whether the model preference varies depending on the taste label, with the red dashed line at a score of 5 acting as the neutral threshold.
+
+
+
 
 ### Hypothesis Testing
 
@@ -500,12 +504,15 @@ ggcorrplot(cor_matrix,
            lab_size = 2.9,
            type="lower")
 ```
-The correlation matrix is illustrated in Figure @fig-corr-matrix, showcasing these relationships clearly.
+The correlation matrix is illustrated in @fig-corr-matrix, showcasing these relationships clearly.
 
-```{r}
+```{r message=FALSE}
+#| label: fig-scree-plots
+#| fig-cap: Parallel Analysis Scree Plots
+#| message: false
 # Perform factor analysis
 # We'll start by estimating the number of factors, then perform the analysis
-fa_parallel <- fa.parallel(data, fm = "ml", fa = "fa")
+fa_parallel <- fa.parallel(data, fm = "ml", fa = "fa", main="")
 num_factors <- fa_parallel$nfact # Optimal number of factors from parallel analysis
 ```
 
@@ -513,47 +520,113 @@ To determine the optimal number of factors for our analysis, we employed paralle
 Following this, we executed the factor analysis using the identified number of factors, applying an oblique rotation (oblimin) to allow for potential correlations among the factors. The results of the factor analysis, including the factor loadings, are presented in the output. The factor loadings indicate how strongly each variable contributes to the identified factors, providing insights into the underlying structure of the data.
 
 ```{r}
+#| label: fig-factor-analysis
+#| fig-cap: Factor analysis graph.
+
 # Run the factor analysis with the identified number of factors
 factor_analysis <- fa(data, nfactors = num_factors, rotate = "oblimin", fm = "ml", scores=TRUE)
 
-fa.diagram(factor_analysis)
+fa.diagram(factor_analysis, main="")
+```
 
+```{r}
 # Display factor loadings
 print(factor_analysis$loadings)
 ```
 
 To visualize the relationships among the factors, we generated biplots for various factor combinations. The biplots, shown in the subsequent figures, illustrate the distribution of variables across the identified factors, highlighting the clustering of adjectives associated with similar emotional states.
 
+:::: {#fig-fa-biplot layout="[[1, 1], [1, 1]]"}
+::: {#fig-fa-biplot-1}
 ```{r}
 biplot.psych(
   factor_analysis,
   choose=c(1,2),
-  smoother = TRUE)
+  smoother = TRUE,
+  main = NULL,
+  )
+```
+:::
 
+::: {#fig-fa-biplot-2}
+```{r}
 biplot.psych(
   factor_analysis,
   choose=c(3,4),
+  main = NULL,
   smoother = TRUE)
+```
+:::
 
+::: {#fig-fa-biplot-3}
+```{r}
 biplot(
   factor_analysis,
   choose=c(1,3),
+  main = NULL,
   smoother=TRUE
 )
+```
+:::
 
+::: {#fig-fa-biplot-4}
+```{r}
 biplot(
   factor_analysis,
+  main = NULL,
   smoother = TRUE,
   choose=c(1,4),
 )
 ```
+:::
+
+Loadings biplot over the four factors.
+:::
+
+```{r}
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+# Creiamo un dataframe con gli scores e il prompt
+scores_df <- cbind(data_task2["prompt"], as.data.frame(factor_analysis$scores))
+
+# Rinominare le colonne dei fattori se necessario
+colnames(scores_df)[2:5] <- paste0("Factor", 1:4)
+
+# Calcoliamo la media e la deviazione standard per ogni fattore, raggruppati per prompt
+summary_table <- scores_df |>
+  group_by(prompt) |>
+  summarise(across(starts_with("Factor"), 
+                   list(mu = mean, sigma = sd), 
+                   .names = "{.col}_{.fn}"))
+
+# Riorganizziamo i dati in un formato tabellare con le coppie (mu, sigma)
+summary_table_formatted <- summary_table |>
+  mutate(across(contains("_mu"), 
+                ~ sprintf("$\\mu=%.2f$, $\\sigma=%.2f$", .x, get(sub("_mu", "_sigma", cur_column())))))
+
+# Selezioniamo solo le colonne formattate
+summary_table_kable <- summary_table_formatted |>
+  select(prompt, contains("_mu"))
+
+# Rinominiamo le colonne per renderle più leggibili
+colnames(summary_table_kable) <- c("Prompt", paste0("Fattore ", 1:4))
+
+# Creiamo la tabella con kableExtra
+kable(summary_table_kable)
+```
 
 Lastly, we performed a multi-factor analysis to further explore the dimensions of negativity and positivity within the data. The results of this analysis are depicted in the multi-factor diagram, which categorizes the factors into two overarching themes: Negativity and Positivity.
 
+::: {#fig-multilevel-fa}
 ```{r}
 fam <- fa.multi(data, nfact2=2, nfactors=4)
-fa.multi.diagram(fam, f2labels = c("Negativity", "Positivity"))
+fa.multi.diagram(fam, f2labels = c("Negativity", "Positivity"), main="")
 ```
+
+Hierarchical (multilevel) factors' structure.
+:::
 
 Tabella con i quattro fattori: media e sd dei 4 prompt.
 
