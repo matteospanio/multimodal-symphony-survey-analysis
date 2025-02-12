@@ -10,7 +10,6 @@ If you use this code or the data in your research, please cite the following art
 @article{spanio2024multimodal,
   title={{A} {Multimodal} {Symphony}: {Integrating} {Taste} and {Sound} through {Generative} {AI}},
   author={Spanio, Matteo and Zampini, Massimiliano and Rod{\`a}, Antonio and Pierucci, Franco},
-  journal={Frontiers in Computer Science},
   year={2024}
 }
 ```

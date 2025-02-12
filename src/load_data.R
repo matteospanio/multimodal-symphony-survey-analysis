@@ -1,8 +1,10 @@
 library(tidyverse)
 source("src/utils.R") # load a set of custom functions and constants
 
-unzip("data/PsyToolkitData_musiclm_2025_01_07_15_08.zip", exdir = "data")
-data_raw <- read_csv("data/data.csv", show_col_types = FALSE)
+url <- "https://files.de-1.osf.io/v1/resources/sfe2x/providers/osfstorage/679fe1264be2e2288f468d54"
+tmp_data <- tempfile(fileext = ".csv")
+download.file(url, tmp_data, method = "auto", mode = "wb")
+data_raw <- read_csv(tmp_data, show_col_types = FALSE)
 
 # select the portion of data related to survey's first task
 data_task1 <- data_raw |>
