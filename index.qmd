@@ -1,6 +1,6 @@
 ---
-title: "A Multimodal Symphony: Integrating Taste and Sound through Generative AI"
-date: 2025-02-01
+title: "A Multimodal Symphony: Data analysis"
+date: 2025-02-12
 authors:
   - name: Matteo Spanio
     email: spanio@dei.unipd.it
@@ -35,25 +35,15 @@ authors:
         url: https://www.unipd.it
     roles: writing
     corresponding: false
-  - name: Franco Pierucci
-    email: franco.pierucci@soundfood.it
-    affiliation:
-      - name: SoundFood s.r.l.
-        url: https://www.soundfood.it/
-    roles: conceptualization
-    corresponding: false
 abstract: >
-  In recent decades, neuroscientific and psychological research by Spence, Wang, Zampini and others has traced direct relationships between taste and auditory perceptions. This article explores multimodal generative models capable of converting taste information into music, building on this foundational research. We provide a brief review of the state of the art in this field, highlighting key findings and methodologies. Additionally, we present an experiment in which we fine-tuned a Large Language Model (LLM) to generate music based on detailed taste descriptions provided for each musical piece. The results are promising: the fine-tuned model produces music that more coherently reflects the input taste descriptions compared to the non-fine-tuned model. This study represents a significant step towards understanding and developing embodied interactions between AI, sound, and taste, opening new possibilities in the field of generative AI.
+  In recent decades, neuroscientific and psychological research has traced direct relationships between taste and auditory perceptions. This article explores multimodal generative models capable of converting taste information into music, building on this foundational research. We provide a brief review of the state of the art in this field, highlighting key findings and methodologies. Additionally, we present an experiment in which we fine-tuned a generative music model (MusicGEN) to generate music based on detailed taste descriptions provided for each musical piece. The results are promising: the fine-tuned model produces music that more coherently reflects the input taste descriptions compared to the non-fine-tuned model. This study represents a significant step towards understanding and developing embodied interactions between AI, sound, and taste, opening new possibilities in the field of generative AI.
 keywords:
   - Generative AI
   - Crossmodal correspondences
   - Statistical analysis
   - Synesthesia
 license: "CC BY"
-citation:
-  container-title: Frontiers in Computer Science
-  volume: TBD
-  issue: TBD
+citation: true
 funding: "We thank SoundFood s.r.l. for the economic support of this research."
 bibliography: references.bib
 csl: ieee.csl
