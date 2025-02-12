@@ -1,5 +1,7 @@
 # A Multimodal Symphony: Data analysis
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/matteospanio/multimodal-symphony-survey-analysis/HEAD?urlpath=rstudio)
+
 This is the data analysis related to the article *A Multimodal Symphony: Integrating Taste and Sound through Generative AI* by Matteo Spanio, Massimiliano Zampini, Antonio Rodà and Franco Pierucci.
 
 ## Citation
