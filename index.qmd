@@ -47,7 +47,6 @@ citation: true
 funding: "We thank SoundFood s.r.l. for the economic support of this research."
 bibliography: references.bib
 csl: ieee.csl
-code-links: binder
 ---
 
 ## Demographic Analysis

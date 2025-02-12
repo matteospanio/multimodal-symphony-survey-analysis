@@ -4,11 +4,12 @@ project:
 manuscript:
   manuscript-url: "https://matteospanio.github.io/multimodal-symphony-survey-analysis/"
   code-links:
+    - repo
+    - binder
     - text: Data Import and Cleaning
       href: src/load_data.R
     - text: Utility Functions
       href: src/utils.R
-    - repo: https://github.com/matteospanio/multimodal-symphony-survey-analysis
   article: index.qmd
 
 format:
