@@ -43,7 +43,11 @@ keywords:
   - Statistical analysis
   - Synesthesia
 license: "CC BY"
-citation: true
+citation:
+    type: software
+    container-title: "Zenodo"
+    doi: 10.5281/zenodo.14864652
+    url: https://zenodo.org/records/14864652
 funding: "We thank SoundFood s.r.l. for the economic support of this research."
 bibliography: references.bib
 csl: ieee.csl

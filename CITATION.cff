@@ -3,6 +3,10 @@
 
 cff-version: 1.2.0
 title: "A Multimodal Symphony: survey analysis"
+doi:
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.14864652
 message: >-
   If you use this software, please cite it using the
   metadata from this file.
