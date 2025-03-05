@@ -11,10 +11,14 @@ This is the data analysis related to the article *A Multimodal Symphony: Integra
 If you use this code or the data in your research, please cite the following article:
 
 ```
-@article{spanio2024multimodal,
-  title={{A} {Multimodal} {Symphony}: {Integrating} {Taste} and {Sound} through {Generative} {AI}},
-  author={Spanio, Matteo and Zampini, Massimiliano and Rod{\`a}, Antonio and Pierucci, Franco},
-  year={2025}
+@misc{spanio2025multimodalsymphonyintegratingtaste,
+      title={A Multimodal Symphony: Integrating Taste and Sound through Generative AI}, 
+      author={Matteo Spanio and Massimiliano Zampini and Antonio Rodà and Franco Pierucci},
+      year={2025},
+      eprint={2503.02823},
+      archivePrefix={arXiv},
+      primaryClass={cs.SD},
+      url={https://arxiv.org/abs/2503.02823}, 
 }
 ```
 
